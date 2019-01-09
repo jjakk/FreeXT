@@ -4,9 +4,39 @@
 
 /* Id's */
 
+#noteSection{
+	
+	background: #4e545e;
+	
+	height: 500px;
+	
+	border-radius: 10px;
+	
+	margin-top: 25px;
+	
+}
+
+#headerSection{
+	
+	background: #4e545e;
+	
+	height: 75px;
+	
+	margin-top: 25px;
+	
+	border-radius: 10px;
+	
+}
+
 /* Classes */
 
 /* Tags */
+
+body{
+	
+	background: #2a2d32;
+	
+}
 
 /* Other */
 
