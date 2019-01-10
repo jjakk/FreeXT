@@ -20,7 +20,7 @@
 	
 	height: 500px;
 	
-	margin-top: 25px;
+	margin-top: 10px;
 	
 }
 
@@ -29,6 +29,8 @@
 	text-align: center;
 	
 	color: white;
+	
+	line-height: 70%;
 	
 	font-family: roboto;
 	
