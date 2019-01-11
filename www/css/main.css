@@ -32,7 +32,7 @@
 	
 	text-align: center;
 	
-	width: 100vw;
+	width: 99.99vw;
 	
 	margin-left: -0.4vw;
 	
@@ -82,6 +82,24 @@
 	
 }
 
+#navigation{
+	
+	display: none;
+	
+	background: black;
+	
+	width: 40vw;
+	
+	height: 98vh;
+	
+	position: sticky;
+	
+	margin-top: -62.1vh;
+	
+	margin-left: -0.8vh;
+	
+}
+
 /* Classes */
 
 .rotated{
@@ -105,6 +123,8 @@ button{
 	
 	padding: 5px;
 	
+	outline: none;
+	
 	
 }
 
@@ -124,7 +144,7 @@ button{
 		
 		margin-top: -2vw;
 		
-		width: 96vw;
+		width: 98vw;
 		
 	}
 	
