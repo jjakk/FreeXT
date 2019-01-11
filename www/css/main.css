@@ -34,19 +34,45 @@
 	
 	font-family: roboto;
 	
-	background: #2ecc71;
+	background: #37dd7e;
 	
 	height: 75px;
+	
+}
+
+#navButton{
+	
+	float: left;
+	
+	margin-left: 1.5%;
+	
+	margin-top: 17.5px;
+	
+	font-size: 30px;
+	
+	border: 0px;
+	
+	transition: 0.5s;
 	
 }
 
 /* Classes */
 
 /* Tags */
-
 body{
 	
 	background: #bdc3c7;
+	
+}
+
+button{
+	
+	background-color: rgb(0, 0, 0, 0);
+	
+	border: 1px solid black;
+	
+	padding: 5px;
+	
 	
 }
 
