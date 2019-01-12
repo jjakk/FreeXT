@@ -9,6 +9,9 @@
   "installed_plugins": {
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "FreeXT"
+    },
+    "cordova-plugin-screen-orientation": {
+      "PACKAGE_NAME": "FreeXT"
     }
   },
   "dependent_plugins": {}

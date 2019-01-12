@@ -1,7 +1,13 @@
 
 function initiateStuff(){
 	
+	try{
+		
+		window.screen.lockOrientation("portrait");
+		
+	}
 	
+	catch{}
 	
 }
 

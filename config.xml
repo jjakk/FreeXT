@@ -18,7 +18,7 @@
     <allow-intent href="geo:*" />
     <platform name="android">
         <allow-intent href="market:*" />
-		<icon src="www/img/icon.png" platform="android" width="57" height="57" density="mdpi" />
+        <icon density="mdpi" height="57" platform="android" src="www/img/icon.png" width="57" />
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
@@ -26,4 +26,5 @@
     </platform>
     <engine name="windows" spec="^6.0.1" />
     <engine name="android" spec="~7.1.4" />
+    <plugin name="cordova-plugin-screen-orientation" spec="^3.0.1" />
 </widget>
