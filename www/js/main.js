@@ -1,13 +1,20 @@
 
 function initiateStuff(){
-
-	$('#navButton').click(function(){
-		
-		$(this).toggleClass('rotated');
-		
-		console.log("ok");
-		
-	});
+	
+	
 	
 }
+
+function openNav(){
+	
+	document.getElementById("navigation").className = "navOpen";
+	
+}
+
+function closeNav(){
+	
+	document.getElementById("navigation").className = "navClosed";
+	
+}
+
 

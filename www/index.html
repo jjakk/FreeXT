@@ -35,13 +35,13 @@
 
 <!-- Body-->
 
-<body onload="initiateStuff();">
+<body onload="initiateStuff();" onclick="checkNav();">
 
 	<!-- Header section -->
 
 	<header id="headerSection">
 	
-		<button id="navButton"><i class="fa fa-bars"></i></button>
+		<button id="navButton" onclick="openNav();"><i class="fa fa-bars"></i></button>
 		
 		<button id="newButton"><i class="fa fa-plus"></i></button>
 		
@@ -58,7 +58,9 @@
 	
 	<!-- Navigation bar -->
 	
-	<section id="navigation">
+	<section id="navigation" class="navClosed">
+	
+		<button id="closeNavButton" onclick="closeNav();"><i class="fa fa-times"></i></button>
 	
 	</section>
 

@@ -32,12 +32,6 @@
 	
 	text-align: center;
 	
-	width: 99.99vw;
-	
-	margin-left: -0.4vw;
-	
-	margin-top: -0.4vw;
-	
 	color: white;
 	
 	line-height: 70%;
@@ -84,19 +78,31 @@
 
 #navigation{
 	
-	display: none;
+	background: #919191;
 	
-	background: black;
+	height: 100vh;
 	
-	width: 40vw;
+	position: fixed;
 	
-	height: 98vh;
+	left: 0px;
 	
-	position: sticky;
+	top: 0px;
 	
-	margin-top: -62.1vh;
+	transition: 1s;
 	
-	margin-left: -0.8vh;
+}
+
+#closeNavButton{
+	
+	border: none;
+	
+	font-size: 30px;
+	
+	float: right;
+	
+	margin-top: 15px;
+	
+	margin-right: 15px;
 	
 }
 
@@ -105,6 +111,22 @@
 .rotated{
 	
     transform: rotate(90deg);
+	
+}
+
+.navClosed{
+	
+	width: 0vw;
+	
+	opacity: 0;
+	
+}
+
+.navOpen{
+	
+	width: 30vw;
+	
+	opacity: 1;
 	
 }
 
@@ -138,16 +160,6 @@ button{
 
 	/* Id's */
 	
-	#headerSection{
-		
-		margin-left: -2vw;
-		
-		margin-top: -2vw;
-		
-		width: 97vw;
-		
-	}
-	
 	#navButton{
 		
 		margin-left: 5%;
@@ -162,6 +174,12 @@ button{
 
 	/* Classes */
 
+	.navOpen{
+		
+		width: 50vw;
+		
+	}
+	
 	/* Tags */
 
 	/* Other */
