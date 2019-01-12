@@ -42,6 +42,8 @@
 	
 	height: 75px;
 	
+	border-radius: 10px;
+	
 }
 
 #navButton{
@@ -118,19 +120,16 @@
 	
 	width: 0vw;
 	
-	opacity: 0;
-	
 }
 
 .navOpen{
 	
 	width: 30vw;
 	
-	opacity: 1;
-	
 }
 
 /* Tags */
+
 body{
 	
 	background: #bdc3c7;
@@ -159,6 +158,20 @@ button{
 @media only screen and (max-width: 600px){
 
 	/* Id's */
+	
+	#noteSection{
+		
+		margin: 5px;
+	
+		margin-top: 15px;
+		
+	}
+	
+	#navigation{
+		
+		transition: 0.75s;
+		
+	}
 	
 	#navButton{
 		
