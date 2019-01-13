@@ -16,7 +16,7 @@
 
 #noteSection{
 	
-	background: #d8d8d8;
+	background: white;
 	
 	height: 500px;
 	
@@ -24,25 +24,23 @@
 	
 	margin-top: 15px;
 	
-	border-radius: 10px;
-	
 }
 
 #headerSection{
 	
 	text-align: center;
 	
-	color: white;
+	color: black;
 	
 	line-height: 70%;
 	
 	font-family: roboto;
 	
-	background: #37dd7e;
+	background: white;
 	
 	height: 75px;
 	
-	border-radius: 10px;
+	margin: 10px;
 	
 }
 
@@ -132,7 +130,7 @@
 
 body{
 	
-	background: #bdc3c7;
+	background: #282828;
 	
 }
 
@@ -160,8 +158,6 @@ button{
 	/* Id's */
 	
 	#noteSection{
-		
-		margin: 5px;
 	
 		margin-top: 15px;
 		
@@ -189,7 +185,7 @@ button{
 
 	.navOpen{
 		
-		width: 55vw;
+		width: 70vw;
 		
 	}
 	
