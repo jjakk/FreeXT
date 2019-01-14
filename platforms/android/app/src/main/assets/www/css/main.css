@@ -16,7 +16,7 @@
 
 #noteSection{
 	
-	background: #d8d8d8;
+	background: white;
 	
 	height: 500px;
 	
@@ -24,23 +24,23 @@
 	
 	margin-top: 15px;
 	
-	border-radius: 10px;
-	
 }
 
 #headerSection{
 	
 	text-align: center;
 	
-	color: white;
+	color: black;
 	
 	line-height: 70%;
 	
 	font-family: roboto;
 	
-	background: #37dd7e;
+	background: white;
 	
 	height: 75px;
+	
+	margin: 10px;
 	
 }
 
@@ -118,22 +118,19 @@
 	
 	width: 0vw;
 	
-	opacity: 0;
-	
 }
 
 .navOpen{
 	
 	width: 30vw;
 	
-	opacity: 1;
-	
 }
 
 /* Tags */
+
 body{
 	
-	background: #bdc3c7;
+	background: #282828;
 	
 }
 
@@ -160,6 +157,30 @@ button{
 
 	/* Id's */
 	
+	#headerSection{
+		
+		margin-left: 0px;
+		
+		margin-right: 0px;
+		
+	}
+	
+	#noteSection{
+	
+		margin-top: 15px;
+		
+		margin-left: 0px;
+		
+		margin-right: 0px;
+		
+	}
+	
+	#navigation{
+		
+		transition: 0.5s;
+		
+	}
+	
 	#navButton{
 		
 		margin-left: 5%;
@@ -176,7 +197,7 @@ button{
 
 	.navOpen{
 		
-		width: 50vw;
+		width: 70vw;
 		
 	}
 	

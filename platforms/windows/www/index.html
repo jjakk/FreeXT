@@ -25,17 +25,28 @@
 
 <script src="js/main.js"></script>
 
+<script src="js/jQuery/jquery-3.3.1.min.js"></script>
+
 <!-- Css -->
 
 <link rel="stylesheet" href="css/main.css"/>
 
+<link rel="stylesheet" href="css/fontawesome-free-5.6.3-web/css/all.css"/>
+
 <!-- Body-->
 
-<body>
+<body onload="initiateStuff();">
 
 	<!-- Header section -->
 
 	<header id="headerSection">
+	
+		<button id="navButton" onclick="openNav();"><i class="fa fa-bars"></i></button>
+		
+		<button id="newButton"><i class="fa fa-plus"></i></button>
+		
+		<br/>
+		<h1>FreeXT</h1>
 	
 	</header>
 
@@ -47,7 +58,9 @@
 	
 	<!-- Navigation bar -->
 	
-	<section id="navigation">
+	<section id="navigation" class="navClosed">
+	
+		<button id="closeNavButton" onclick="closeNav();"><i class="fa fa-times"></i></button>
 	
 	</section>
 

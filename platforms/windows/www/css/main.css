@@ -1,4 +1,14 @@
 ﻿
+/* Font Imports */
+
+@font-face{
+	
+	src: url("fonts/Roboto-Light.ttf");
+	
+	font-family: roboto;
+	
+}
+
 /* Normal View */
 
 
@@ -6,37 +16,134 @@
 
 #noteSection{
 	
-	background: #d8d8d8;
+	background: white;
 	
 	height: 500px;
 	
-	border-radius: 10px;
+	margin: 10px;
 	
-	margin-top: 25px;
+	margin-top: 15px;
 	
 }
 
 #headerSection{
 	
-	background: #2ecc71;
+	text-align: center;
+	
+	color: black;
+	
+	line-height: 70%;
+	
+	font-family: roboto;
+	
+	background: white;
 	
 	height: 75px;
 	
-	width: 101.65%;
+	margin: 10px;
 	
-	margin-left: -1%;
+}
+
+#navButton{
 	
-	margin-top: -1%;
+	float: left;
+	
+	margin-left: 1%;
+	
+	margin-top: 17.5px;
+	
+	font-size: 30px;
+	
+	border: 0px;
+	
+	transition: 0.5s;
+	
+}
+
+#newButton{
+	
+	float: right;
+	
+	margin-right: 1%;
+	
+	margin-top: 17.5px;
+	
+	font-size: 30px;
+	
+	border: 0px;
+	
+	transition: 0.5s;
+	
+}
+
+#navigation{
+	
+	background: #919191;
+	
+	height: 100vh;
+	
+	position: fixed;
+	
+	left: 0px;
+	
+	top: 0px;
+	
+	transition: 1s;
+	
+}
+
+#closeNavButton{
+	
+	border: none;
+	
+	font-size: 30px;
+	
+	float: right;
+	
+	margin-top: 15px;
+	
+	margin-right: 15px;
 	
 }
 
 /* Classes */
 
+.rotated{
+	
+    transform: rotate(90deg);
+	
+}
+
+.navClosed{
+	
+	width: 0vw;
+	
+}
+
+.navOpen{
+	
+	width: 30vw;
+	
+}
+
 /* Tags */
 
 body{
 	
-	background: #bdc3c7;
+	background: #282828;
+	
+}
+
+button{
+	
+	background-color: rgb(0, 0, 0, 0);
+	
+	border: 1px solid black;
+	
+	padding: 5px;
+	
+	outline: none;
+	
 	
 }
 
@@ -49,9 +156,51 @@ body{
 @media only screen and (max-width: 600px){
 
 	/* Id's */
+	
+	#headerSection{
+		
+		margin-left: 0px;
+		
+		margin-right: 0px;
+		
+	}
+	
+	#noteSection{
+	
+		margin-top: 15px;
+		
+		margin-left: 0px;
+		
+		margin-right: 0px;
+		
+	}
+	
+	#navigation{
+		
+		transition: 0.5s;
+		
+	}
+	
+	#navButton{
+		
+		margin-left: 5%;
+		
+	}
+	
+	#newButton{
+		
+		margin-right: 5%;
+		
+	}
 
 	/* Classes */
 
+	.navOpen{
+		
+		width: 70vw;
+		
+	}
+	
 	/* Tags */
 
 	/* Other */
