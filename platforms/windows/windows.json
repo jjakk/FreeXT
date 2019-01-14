@@ -1,40 +1,40 @@
 {
-  "prepare_queue": {
-    "installed": [],
-    "uninstalled": []
-  },
-  "config_munge": {
-    "files": {}
-  },
-  "installed_plugins": {
-    "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "FreeXT"
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
     },
-    "cordova-plugin-screen-orientation": {
-      "PACKAGE_NAME": "FreeXT"
-    }
-  },
-  "dependent_plugins": {},
-  "modules": [
-    {
-      "id": "cordova-plugin-screen-orientation.screenorientation",
-      "file": "plugins/cordova-plugin-screen-orientation/www/screenorientation.js",
-      "pluginId": "cordova-plugin-screen-orientation",
-      "clobbers": [
-        "cordova.plugins.screenorientation"
-      ]
+    "config_munge": {
+        "files": {}
     },
-    {
-      "id": "cordova-plugin-screen-orientation.CDVOrientationProxy",
-      "file": "plugins/cordova-plugin-screen-orientation/src/windows/CDVOrientationProxy.js",
-      "pluginId": "cordova-plugin-screen-orientation",
-      "merges": [
-        ""
-      ]
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "FreeXT"
+        },
+        "cordova-plugin-screen-orientation": {
+            "PACKAGE_NAME": "FreeXT"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "id": "cordova-plugin-screen-orientation.screenorientation",
+            "file": "plugins/cordova-plugin-screen-orientation/www/screenorientation.js",
+            "pluginId": "cordova-plugin-screen-orientation",
+            "clobbers": [
+                "cordova.plugins.screenorientation"
+            ]
+        },
+        {
+            "id": "cordova-plugin-screen-orientation.CDVOrientationProxy",
+            "file": "plugins/cordova-plugin-screen-orientation/src/windows/CDVOrientationProxy.js",
+            "pluginId": "cordova-plugin-screen-orientation",
+            "merges": [
+                ""
+            ]
+        }
+    ],
+    "plugin_metadata": {
+        "cordova-plugin-whitelist": "1.3.3",
+        "cordova-plugin-screen-orientation": "3.0.1"
     }
-  ],
-  "plugin_metadata": {
-    "cordova-plugin-whitelist": "1.3.3",
-    "cordova-plugin-screen-orientation": "3.0.1"
-  }
 }
