@@ -9,6 +9,12 @@ function initiateStuff(){
 	
 	catch{}
 	
+	$(document).ready(function() {
+		
+		$("body").fadeIn(500);
+		
+	});
+	
 }
 
 function openNav(){
@@ -20,6 +26,28 @@ function openNav(){
 function closeNav(){
 	
 	document.getElementById("navigation").className = "navClosed";
+	
+}
+
+function openSettings(){
+	
+	closeNav();
+	
+	$(document).ready(function() {
+		
+		$("body").fadeOut(500, function (){window.location = "software.html";});
+		
+	});
+	
+}
+
+function closeSettings(){
+	
+	$(document).ready(function() {
+		
+		$("body").fadeOut(500, function (){window.location = "index.html";});
+		
+	});
 	
 }
 
