@@ -9,12 +9,6 @@ function initiateStuff(){
 	
 	catch{}
 	
-	$(document).ready(function() {
-		
-		$("body").fadeIn(500);
-		
-	});
-	
 }
 
 function openNav(){
@@ -33,21 +27,13 @@ function openSettings(){
 	
 	closeNav();
 	
-	$(document).ready(function() {
-		
-		$("body").fadeOut(500, function (){window.location = "software.html";});
-		
-	});
+	window.location = "software.html";
 	
 }
 
 function closeSettings(){
 	
-	$(document).ready(function() {
-		
-		$("body").fadeOut(500, function (){window.location = "index.html";});
-		
-	});
+	window.location = "index.html";
 	
 }
 
