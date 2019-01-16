@@ -1,4 +1,12 @@
 
+function sleep(seconds) {
+  return new Promise(resolve => {
+    setTimeout(() => {
+      resolve('resolved');
+    }, seconds);
+  });
+}
+
 function initiateStuff(){
 	
 	try{
@@ -23,9 +31,22 @@ function closeNav(){
 	
 }
 
-function openSettings(){
+async function openSettings(){
 	
 	closeNav();
+	
+	if(window.matchMedia("(max-width: 600px)").matches){
+		
+		await sleep(500);
+		
+	}
+	
+	else{
+		
+		await sleep(1000);
+		
+	}
+	
 	
 	window.location = "software.html";
 	

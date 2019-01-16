@@ -118,11 +118,11 @@
 	
 	margin: auto;
 	
-	margin-top: 20px;
+	margin-top: 15px;
 	
-	width: 96vw;
+	width: 93vw;
 	
-	height: 455px;
+	height: 465px;
 	
 	resize: none;
 	
@@ -191,7 +191,6 @@ button{
 	outline: none;
 	
 	cursor: pointer;
-	
 	
 }
 
@@ -263,9 +262,17 @@ button{
 		
 		width: 70vw;
 		
+		cursor: default;
+		
 	}
 	
 	/* Tags */
+	
+	button{
+		
+		cursor: default;
+		
+	}
 
 	/* Other */
 	
