@@ -1,4 +1,4 @@
-
+﻿
 var inCordova = false;
 
 function sleep(seconds) {
