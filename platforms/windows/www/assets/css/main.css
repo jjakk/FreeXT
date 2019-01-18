@@ -96,6 +96,8 @@
 	
 	transition: 1s;
 	
+	overflow: auto;
+	
 }
 
 #closeNavButton{
@@ -152,7 +154,7 @@
 	
 	width: 30vw;
 	
-	height: 75px;
+	height: 50px;
 	
 	background: white;
 	
@@ -162,9 +164,9 @@
 	
 	text-align: center;
 	
-	font-size: 200%;
+	font-size: 150%;
 	
-	line-height: 70px;
+	line-height: 50px;
 	
 	cursor: pointer;
 	
