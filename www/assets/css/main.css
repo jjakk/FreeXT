@@ -9,6 +9,14 @@
 	
 }
 
+@font-face{
+	
+	src: url("fonts/Roboto-Regular.ttf");
+	
+	font-family: robotoRegular;
+	
+}
+
 /* Normal View */
 
 /* Id's */
@@ -69,7 +77,31 @@
 
 #mainSection{
 	
-	min-height: 600px;
+	min-height: 500px;
+	
+}
+
+#mainTextbox{
+	
+	display: block;
+	
+	margin: auto;
+	
+	background: #fffd8c;
+	
+	width: 95vw;
+	
+	min-height: 500px;
+	
+	border: 1px solid black;
+	
+	border-radius: 5px;
+	
+	padding: 10px;
+	
+	resize: none;
+	
+	font-family: robotoRegular;
 	
 }
 
