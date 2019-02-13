@@ -69,6 +69,8 @@
 
 #mainSection{
 	
+	background: white;
+	
 	min-height: 600px;
 	
 }
@@ -126,6 +128,14 @@ hr{
 	#mainHeader button{
 		
 		top: 15px;
+		
+	}
+	
+	#mainSection{
+		
+		background: white;
+		
+		min-height: 400px;
 		
 	}
 	
