@@ -107,6 +107,18 @@
 
 /* Classes */
 
+.navOpen{
+	
+	width: 40vw;
+	
+}
+
+.navClosed{
+	
+	width: 0vw;
+	
+}
+
 /* Tags */
 
 /* Other */
@@ -124,6 +136,24 @@ body{
 hr{
 	
 	margin: 0px;
+	
+}
+
+nav{
+	
+	position: fixed;
+	
+	width: 0vw;
+	
+	height: 100vh;
+	
+	background: white;
+	
+	transition: 1s;
+	
+	left: 0;
+	
+	top: 0;
 	
 }
 
@@ -175,7 +205,19 @@ hr{
 	
 	/* Classes */
 	
+	.navOpen{
+		
+		width: 65vw;
+		
+	}
+	
 	/* Tags */
+	
+	nav{
+		
+		transition: 0.5s;
+		
+	}
 
 	/* Other */
 	

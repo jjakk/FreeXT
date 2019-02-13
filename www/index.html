@@ -39,25 +39,33 @@
 
 <body>
 
-	<!-- Main Header -->
+	<div id="notNav">
+		
+		<!-- Main Header -->
 
-	<header id="mainHeader">
+		<header id="mainHeader">
+			
+			<h1>FreeXT</h1>
+			
+			<button id="navButton" onclick="document.getElementById('mainNav').className = 'navOpen';"><i class="fa fa-bars"></i></button>
+			
+			<button id="newNoteButton"><i class="far fa-edit"></i></button>
+			
+		</header>
 		
-		<h1>FreeXT</h1>
+		<!-- Main Section -->
 		
-		<button id="navButton"><i class="fa fa-bars"></i></button>
+		<section id="mainSection">
 		
-		<button id="newNoteButton"><i class="far fa-edit"></i></button>
+			<textarea id="mainTextbox"></textarea>
 		
-	</header>
+		</section>
+		
+	</div>
 	
-	<!-- Main Section -->
+	<nav id="mainNav" class="navClosed">
 	
-	<section id="mainSection">
-	
-		<textarea id="mainTextbox"></textarea>
-	
-	</section>
+	</nav>
 
 </body>
 
