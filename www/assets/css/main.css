@@ -77,7 +77,7 @@
 
 #mainSection{
 	
-	min-height: 500px;
+	min-height: 550px;
 	
 }
 
@@ -163,7 +163,13 @@ hr{
 	
 	#mainSection{
 		
-		min-height: 400px;
+		min-height: 550px;
+		
+	}
+	
+	#mainTextbox{
+		
+		width: 90vw;
 		
 	}
 	
