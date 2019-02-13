@@ -67,6 +67,12 @@
 	
 }
 
+#mainSection{
+	
+	min-height: 600px;
+	
+}
+
 /* Classes */
 
 /* Tags */
@@ -78,6 +84,8 @@ body{
 	margin: 0px;
 	
 	background: #fffd8c;
+	
+	overflow-x: hidden;
 	
 }
 
