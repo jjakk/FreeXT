@@ -27,6 +27,10 @@ function openNav(){
 		
 		document.body.style.overflowY = "hidden";
 		
+		document.getElementById("mainTextbox").readOnly = true;
+		
+		document.getElementById("mainTextbox").style.cursor = "default";
+		
 	}
 	
 }
@@ -38,6 +42,10 @@ function closeNav(){
 		document.getElementById("mainNav").className = "navClosed";
 		
 		document.body.style.overflowY = "auto";
+		
+		document.getElementById("mainTextbox").readOnly = false;
+		
+		document.getElementById("mainTextbox").style.cursor = "text";
 		
 	}
 	

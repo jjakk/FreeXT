@@ -105,6 +105,14 @@
 	
 }
 
+#notNav{
+	
+	width: 100vw;
+	
+	height: 100vh;
+	
+}
+
 /* Classes */
 
 .navOpen{
@@ -134,8 +142,6 @@
 	color: white;
 	
 	float: right;
-	
-	transition: 0.1s;
 	
 }
 
