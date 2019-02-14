@@ -119,6 +119,32 @@
 	
 }
 
+.navOption{
+	
+	position: aboslute;
+	
+	text-align: center;
+	
+	line-height: 50px;
+	
+	width: 40vw;
+	
+	height: 50px;
+	
+	color: white;
+	
+	float: right;
+	
+	transition: 0.1s;
+	
+}
+
+.navOption:hover{
+	
+	background: #252a2d;
+	
+}
+
 /* Tags */
 
 /* Other */
@@ -147,7 +173,7 @@ nav{
 	
 	height: 100vh;
 	
-	background: white;
+	background: #34393d;
 	
 	transition: 1s;
 	
@@ -226,6 +252,12 @@ button::-moz-focus-inner {
 	/* Classes */
 	
 	.navOpen{
+		
+		width: 65vw;
+		
+	}
+	
+	.navOption{
 		
 		width: 65vw;
 		
