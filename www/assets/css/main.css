@@ -277,6 +277,12 @@ button::-moz-focus-inner {
 		
 	}
 	
+	#navPuller{
+		
+		width: 7vw;
+		
+	}
+	
 	/* Classes */
 	
 	.navOpen{
@@ -287,7 +293,9 @@ button::-moz-focus-inner {
 	
 	.navOption{
 		
-		width: 65vw;
+		width: 60vw;
+		
+		margin-right: 7vw;
 		
 	}
 	
