@@ -47,22 +47,6 @@
 	
 }
 
-#mainHeader button{
-	
-	position: absolute;
-	
-	background: rgb(0, 0, 0, 0);
-	
-	color: black;
-	
-	font-size: 40px;
-	
-	border: none;
-	
-	top: 30px;
-	
-}
-
 #navButton{
 	
 	left: 1vw;
@@ -113,6 +97,20 @@
 	
 }
 
+#navPuller{
+	
+	position: absolute;
+	
+	float: right;
+	
+	right: 0px;
+	
+	width: 2vw;
+	
+	height: 100vh;
+	
+}
+
 /* Classes */
 
 .navOpen{
@@ -129,19 +127,25 @@
 
 .navOption{
 	
-	position: aboslute;
-	
 	text-align: center;
 	
-	line-height: 50px;
+	margin-right: 2vw;
 	
-	width: 40vw;
+	width: 36vw;
 	
-	height: 50px;
+	padding-top: 20px;
+	
+	padding-bottom: 20px;
+	
+	padding-left: 1vw;
+	
+	padding-right: 1vw;
 	
 	color: white;
 	
 	float: right;
+	
+	word-break: break-all;
 	
 }
 
@@ -188,6 +192,24 @@ nav{
 	top: 0;
 	
 	z-index: 1;
+	
+	overflow: auto;
+	
+}
+
+button{
+	
+	position: absolute;
+	
+	background: rgb(0, 0, 0, 0);
+	
+	color: black;
+	
+	font-size: 40px;
+	
+	border: none;
+	
+	top: 30px;
 	
 }
 
