@@ -155,6 +155,14 @@ nav{
 	
 	top: 0;
 	
+	z-index: 1;
+	
+}
+
+button::-moz-focus-inner {
+	
+	border: 0;
+	
 }
 
 *{
@@ -164,6 +172,18 @@ nav{
 	outline: none;
 	
 	font-weight: normal;
+	
+}
+
+*:not(textarea){
+	
+	-webkit-user-select: none;
+	
+	-moz-user-select: none;
+	
+	-ms-user-select: none;
+	
+	user-select: none;
 	
 }
 

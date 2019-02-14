@@ -7,7 +7,7 @@
 
 <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
 
-<link rel="apple-touch-icon" href="assets/img/icon.png"/>
+<link rel="apple-touch-icon" href="assets/img/ios-icon.png"/>
 
 <meta name="apple-mobile-web-app-title" content="FreeXT"/>
 
@@ -39,7 +39,7 @@
 
 <body>
 
-	<div id="notNav">
+	<div id="notNav" onclick="closeNav();">
 		
 		<!-- Main Header -->
 
@@ -47,7 +47,7 @@
 			
 			<h1>FreeXT</h1>
 			
-			<button id="navButton" onclick="document.getElementById('mainNav').className = 'navOpen';"><i class="fa fa-bars"></i></button>
+			<button id="navButton" onclick="openNav();"><i class="fa fa-bars"></i></button>
 			
 			<button id="newNoteButton"><i class="far fa-edit"></i></button>
 			
@@ -64,7 +64,9 @@
 	</div>
 	
 	<nav id="mainNav" class="navClosed">
-	
+		
+		<div></div>
+		
 	</nav>
 
 </body>
