@@ -38,34 +38,28 @@
 <!-- Body-->
 
 <body>
-
-	<div id="notNav" onclick="closeNav();">
+	
+	<!-- Main Header -->
+	
+	<header id="mainHeader">
 		
-		<!-- Main Header -->
-
-		<header id="mainHeader">
-			
-			<h1>FreeXT</h1>
-			
-			<button id="navButton" onclick="openNav();"><i class="fa fa-bars"></i></button>
-			
-			<button id="newNoteButton"><i class="far fa-edit"></i></button>
-			
-		</header>
+		<h1>FreeXT</h1>
 		
-		<!-- Main Section -->
+		<button id="navButton" onclick="openNav();"><i class="fa fa-bars"></i></button>
 		
-		<section id="mainSection">
+		<button id="newNoteButton"><i class="far fa-edit"></i></button>
 		
-			<textarea id="mainTextbox"></textarea>
-		
-		</section>
-		
-	</div>
+	</header>
+	
+	<!-- Main Section -->
+	
+	<section id="mainSection">
+	
+		<textarea id="mainTextbox"></textarea>
+	
+	</section>
 	
 	<nav id="mainNav" class="navClosed">
-	
-		<div id="navPuller"></div>
 	
 		<div class="navOption">Settings</div>
 		
@@ -76,6 +70,8 @@
 		<div class="navOption">Note 3</div>
 		
 	</nav>
+	
+	<div id="sectionCover" onclick="closeNav();"></div>
 
 </body>
 

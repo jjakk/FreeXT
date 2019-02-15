@@ -27,9 +27,7 @@ function openNav(){
 		
 		document.body.style.overflowY = "hidden";
 		
-		document.getElementById("mainTextbox").readOnly = true;
-		
-		document.getElementById("mainTextbox").style.cursor = "default";
+		document.getElementById("sectionCover").style.display = "block";
 		
 	}
 	
@@ -43,9 +41,7 @@ function closeNav(){
 		
 		document.body.style.overflowY = "auto";
 		
-		document.getElementById("mainTextbox").readOnly = false;
-		
-		document.getElementById("mainTextbox").style.cursor = "text";
+		document.getElementById("sectionCover").style.display = "none";
 		
 	}
 	

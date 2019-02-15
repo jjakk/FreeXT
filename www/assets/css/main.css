@@ -89,25 +89,19 @@
 	
 }
 
-#notNav{
+#sectionCover{
+	
+	position: fixed;
+	
+	top: 0px;
+	
+	left: 0px;
 	
 	width: 100vw;
 	
 	height: 100vh;
 	
-}
-
-#navPuller{
-	
-	position: absolute;
-	
-	float: right;
-	
-	right: 0px;
-	
-	width: 2vw;
-	
-	height: 100vh;
+	display: none;
 	
 }
 
@@ -129,9 +123,7 @@
 	
 	text-align: center;
 	
-	margin-right: 2vw;
-	
-	width: 36vw;
+	width: 40vw;
 	
 	padding-top: 20px;
 	
@@ -277,12 +269,6 @@ button::-moz-focus-inner {
 		
 	}
 	
-	#navPuller{
-		
-		width: 7vw;
-		
-	}
-	
 	/* Classes */
 	
 	.navOpen{
@@ -293,9 +279,7 @@ button::-moz-focus-inner {
 	
 	.navOption{
 		
-		width: 60vw;
-		
-		margin-right: 7vw;
+		width: 65vw;
 		
 	}
 	
