@@ -1,4 +1,14 @@
 
+$(document).ready(function() {
+	
+    $(window).scroll(function() {
+		
+		if(document.getElementById("mainNav").offsetWidth != 0)scroll(0,0);
+		
+	});
+	
+});
+
 function openNav(){
 	
 	if(document.getElementById("mainNav").offsetWidth == 0){
