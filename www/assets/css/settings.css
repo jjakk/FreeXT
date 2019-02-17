@@ -1,0 +1,61 @@
+
+/* Font Imports */
+
+/* Normal View */
+
+/* Id's */
+
+#backButon{
+	
+	position: absolute;
+	
+	left: 5px;
+	
+	top: 1vh;
+	
+	font-size: 25px;
+	
+	padding: 0px;
+	
+	color: #0080FF;
+	
+}
+
+/* Classes */
+
+/* Tags */
+
+body{
+	
+	background: white;
+	
+}
+
+h1{
+	
+	text-align: center;
+	
+}
+
+/* Other */
+
+/* Mobile View */
+
+@media only screen and (max-width: 600px){
+
+	/* Id's */
+	
+	#backButon{
+		
+		top: 2.5vh;
+		
+	}
+	
+	/* Classes */
+	
+	/* Tags */
+
+	/* Other */
+	
+}
+

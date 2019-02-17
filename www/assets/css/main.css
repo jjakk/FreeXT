@@ -21,203 +21,9 @@
 
 /* Id's */
 
-#mainHeader{
-	
-	/*background: linear-gradient(to right,  #524364 0%, #4873a6 100%);*/
-	
-	background: #fffd8c;
-	
-	height: 100px;
-	
-}
-
-#mainHeader h1{
-	
-	position: absolute;
-	
-	width: 100vw;
-	
-	color: black;
-	
-	margin: 0px;
-	
-	text-align: center;
-	
-	top: 30px;
-	
-}
-
-#navButton{
-	
-	left: 1vw;
-	
-}
-
-#newNoteButton{
-	
-	right: 1vw;
-	
-}
-
-#mainSection{
-	
-	min-height: 550px;
-	
-}
-
-#mainTextbox{
-	
-	display: block;
-	
-	margin: auto;
-	
-	background: #fffd8c;
-	
-	width: 95vw;
-	
-	min-height: 500px;
-	
-	border: 1px solid black;
-	
-	border-radius: 5px;
-	
-	padding: 10px;
-	
-	resize: none;
-	
-	font-family: robotoRegular;
-	
-}
-
-#noteTitleInput{
-	
-	display: block;
-	
-	margin: auto;
-	
-	background: #fffd8c;
-	
-	width: 95vw;
-	
-	height: 50px;
-	
-	margin-bottom: 25px;
-	
-	border: 1px solid black;
-	
-	border-radius: 5px;
-	
-	padding: 10px;
-	
-	resize: none;
-	
-	font-family: robotoRegular;
-	
-	font-size: 15px;
-	
-}
-
-#sectionCover{
-	
-	position: fixed;
-	
-	top: 0px;
-	
-	left: 0px;
-	
-	width: 100vw;
-	
-	height: 100vh;
-	
-	display: none;
-	
-}
-
 /* Classes */
 
-.navOpen{
-	
-	width: 40vw;
-	
-}
-
-.navClosed{
-	
-	width: 0vw;
-	
-}
-
-.navOption{
-	
-	text-align: center;
-	
-	width: 40vw;
-	
-	padding-top: 20px;
-	
-	padding-bottom: 20px;
-	
-	padding-left: 1vw;
-	
-	padding-right: 1vw;
-	
-	color: white;
-	
-	float: right;
-	
-	word-break: break-all;
-	
-}
-
-.navOption:hover{
-	
-	background: #252a2d;
-	
-}
-
 /* Tags */
-
-/* Other */
-
-body{
-	
-	height: 100vh;
-	
-	margin: 0px;
-	
-	background: #fffd8c;
-	
-	overflow-x: hidden;
-	
-}
-
-hr{
-	
-	margin: 0px;
-	
-}
-
-nav{
-	
-	position: fixed;
-	
-	width: 0vw;
-	
-	height: 100vh;
-	
-	background: #34393d;
-	
-	transition: 1s;
-	
-	left: 0;
-	
-	top: 0;
-	
-	z-index: 1;
-	
-	overflow: auto;
-	
-}
 
 button{
 	
@@ -240,6 +46,8 @@ button::-moz-focus-inner {
 	border: 0;
 	
 }
+
+/* Other */
 
 *{
 	
@@ -269,63 +77,9 @@ button::-moz-focus-inner {
 
 	/* Id's */
 	
-	#mainHeader{
-		
-		height: 75px;
-		
-	}
-	
-	#mainHeader h1{
-		
-		top: 15px;
-		
-	}
-	
-	#mainHeader button{
-		
-		top: 15px;
-		
-	}
-	
-	#mainSection{
-		
-		min-height: 550px;
-		
-	}
-	
-	#mainTextbox{
-		
-		width: 90vw;
-		
-	}
-	
-	#noteTitleInput{
-		
-		width: 90vw;
-		
-	}
-	
 	/* Classes */
 	
-	.navOpen{
-		
-		width: 65vw;
-		
-	}
-	
-	.navOption{
-		
-		width: 65vw;
-		
-	}
-	
 	/* Tags */
-	
-	nav{
-		
-		transition: 0.5s;
-		
-	}
 
 	/* Other */
 	
