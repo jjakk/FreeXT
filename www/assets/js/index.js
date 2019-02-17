@@ -21,7 +21,7 @@ function closeNav(){
 		
 		document.getElementById("mainNav").className = "navClosed";
 		
-		document.documentElement.style.overflowY = "auto";
+		document.documentElement.style.overflowY = "visible";
 		
 		document.body.style.overflowY = "auto";
 		
@@ -33,17 +33,7 @@ function closeNav(){
 
 async function closeNavCallback(callback){
 	
-	if(document.getElementById("mainNav").offsetWidth != 0){
-		
-		document.getElementById("mainNav").className = "navClosed";
-		
-		document.documentElement.style.overflowY = "auto";
-		
-		document.body.style.overflowY = "auto";
-		
-		document.getElementById("sectionCover").style.display = "none";
-		
-	}
+	closeNav();
 	
 	if(window.matchMedia("(max-width: 600px)").matches){
 		
