@@ -89,6 +89,34 @@
 	
 }
 
+#noteTitleInput{
+	
+	display: block;
+	
+	margin: auto;
+	
+	background: #fffd8c;
+	
+	width: 95vw;
+	
+	height: 50px;
+	
+	margin-bottom: 25px;
+	
+	border: 1px solid black;
+	
+	border-radius: 5px;
+	
+	padding: 10px;
+	
+	resize: none;
+	
+	font-family: robotoRegular;
+	
+	font-size: 15px;
+	
+}
+
 #sectionCover{
 	
 	position: fixed;
@@ -266,6 +294,12 @@ button::-moz-focus-inner {
 	}
 	
 	#mainTextbox{
+		
+		width: 90vw;
+		
+	}
+	
+	#noteTitleInput{
 		
 		width: 90vw;
 		

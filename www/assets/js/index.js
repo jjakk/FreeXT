@@ -47,12 +47,12 @@ async function closeNavCallback(callback){
 	
 	if(window.matchMedia("(max-width: 600px)").matches){
 		
-		await sleep(500 * ((document.getElementById("mainNav").offsetWidth / document.documentElement.clientWidth * 100)/65));
+		await sleep(500 * (((document.getElementById("mainNav").offsetWidth / document.documentElement.clientWidth) * 100)/65));
 		
 	}
 	else{
 		
-		await sleep(1000 * ((document.getElementById("mainNav").offsetWidth / document.documentElement.clientWidth * 100)/40));
+		await sleep(1000 * (((document.getElementById("mainNav").offsetWidth / document.documentElement.clientWidth) * 100)/40));
 		
 	}
 	
