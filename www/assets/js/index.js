@@ -15,7 +15,7 @@ function openNav(){
 	
 }
 
-async function closeNav(){
+function closeNav(){
 	
 	if(document.getElementById("mainNav").offsetWidth != 0){
 		
@@ -31,9 +31,38 @@ async function closeNav(){
 	
 }
 
+async function closeNavCallback(callback){
+	
+	if(document.getElementById("mainNav").offsetWidth != 0){
+		
+		document.getElementById("mainNav").className = "navClosed";
+		
+		document.documentElement.style.overflowY = "auto";
+		
+		document.body.style.overflowY = "auto";
+		
+		document.getElementById("sectionCover").style.display = "none";
+		
+	}
+	
+	if(window.matchMedia("(max-width: 600px)").matches){
+		
+		await sleep(500 * ((document.getElementById("mainNav").offsetWidth / document.documentElement.clientWidth * 100)/65));
+		
+	}
+	else{
+		
+		await sleep(1000 * ((document.getElementById("mainNav").offsetWidth / document.documentElement.clientWidth * 100)/40));
+		
+	}
+	
+	callback();
+	
+}
+
 function openSettings(){
 	
-	closeNav().then(location.href = "settings.html");
+	closeNavCallback(function(){location.href = "settings.html"});
 	
 }
 
