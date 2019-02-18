@@ -3,7 +3,7 @@ function loadFunction(){
 	
 	$(document).ready(function(){
 		
-		$("#mainContainer").fadeIn(500);
+		$("#mainContainer").fadeIn(250);
 		
 	});
 	
