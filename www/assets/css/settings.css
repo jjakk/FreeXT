@@ -25,6 +25,22 @@
 	
 }
 
+#settingsContainer h1{
+	
+	position: absolute;
+	
+	width: 100vw;
+	
+	text-align: center;
+	
+	padding: 0px;
+	
+	margin: 0px;
+	
+	top: 2vh;
+	
+}
+
 /* Classes */
 
 /* Tags */
@@ -54,6 +70,12 @@ h1{
 	#backButon{
 		
 		top: 2.5vh;
+		
+	}
+	
+	#settingsContainer h1{
+		
+		top: 3vh;
 		
 	}
 	
