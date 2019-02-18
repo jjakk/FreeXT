@@ -33,17 +33,5 @@ function openIndex(){
 	
 }
 
-/*try{
-	navigator.Backbutton.goBack(function() {
-	  alert('success')
-	}, function() {
-	  alert('fail')
-	});
-}
-catch(e){
-	
-	alert("mission failed")
-	
-}*/
 
 
