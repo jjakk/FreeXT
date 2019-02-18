@@ -1,4 +1,6 @@
 
+var settingsOpen = false;
+
 function sleep(seconds) {
   return new Promise(resolve => {
     setTimeout(() => {
@@ -8,22 +10,40 @@ function sleep(seconds) {
 }
 
 document.addEventListener('deviceready', function(){
-
-	document.addEventListener('menubutton', function(){
-		alert("menu button pressed")
+	
+	window.addEventListener("orientationchange", function(){
+		
+		screen.orientation.lock('portrait');
+		
 	});
-
+	
 	document.addEventListener('backbutton', function(){
-		alert("back button pressed")
+		
+		if(settingsOpen){
+			
+			openIndex();
+			
+		}
+		
+		else{
+			
+			if(document.getElementById("mainNav").offsetWidth == 0){
+				
+				navigator.app.exitApp();
+				
+			}
+			
+			else{
+				
+				closeNav();
+				
+			}
+			
+		}
+		
 	});
 
 }, false);
-
-window.addEventListener("orientationchange", function(){
-	
-	screen.orientation.lock('portrait');
-	
-});
 
 window.addEventListener("load", function initiateStuff(){
 	

@@ -6,6 +6,9 @@ function loadFunction(){
 		$("#mainContainer").fadeIn(500);
 		
 	});
+	
+	settingsOpen = false;
+	
 }
 
 window.addEventListener("load", loadFunction());

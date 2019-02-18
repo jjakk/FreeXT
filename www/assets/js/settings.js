@@ -11,6 +11,8 @@ async function loadSettings(){
 		
 	});
 	
+	settingsOpen = true;
+	
 };
 
 function openIndex(){
