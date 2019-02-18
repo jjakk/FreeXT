@@ -7,6 +7,18 @@ function sleep(seconds) {
   });
 }
 
+document.addEventListener('deviceready', function(){
+
+	document.addEventListener('menubutton', function(){
+		alert("menu button pressed")
+	});
+
+	document.addEventListener('backbutton', function(){
+		alert("back button pressed")
+	});
+
+}, false);
+
 window.addEventListener("orientationchange", function(){
 	
 	screen.orientation.lock('portrait');
