@@ -1,5 +1,5 @@
 
-window.addEventListener("load", async function(){
+async function loadSettings(){
 	
 	document.body.style.background = "#282828";
 	
@@ -11,7 +11,7 @@ window.addEventListener("load", async function(){
 		
 	});
 	
-});
+};
 
 function openIndex(){
 	
@@ -23,12 +23,18 @@ function openIndex(){
 			
 			await sleep(1000);
 			
-			location.href = "index.html";
+			loadFunction();
 			
 		});
 		
 	});
 	
+}
+
+document.addEventListener("backbutton", onBackKeyDown, false);
+
+function onBackKeyDown() {
+    document.getElementById("console").innerHTML = "back button pressed";
 }
 
 

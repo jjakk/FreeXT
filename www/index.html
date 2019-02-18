@@ -27,12 +27,14 @@
 
 <script src="assets/js/main.js"></script>
 <script src="assets/js/index.js"></script>
+<script src="assets/js/settings.js"></script>
 <script type="text/javascript" src="cordova.js"></script>
 
 <!-- Css -->
 
 <link rel="stylesheet" href="assets/css/main.css"/>
 <link rel="stylesheet" href="assets/css/index.css"/>
+<link rel="stylesheet" href="assets/css/settings.css"/>
 
 <link rel="stylesheet" href="assets/css/fontawesome-free-5.6.3-web/css/all.css"/>
 
@@ -41,42 +43,56 @@
 <!-- Body-->
 
 <body>
-	
-	<!-- Main Header -->
-	
-	<header id="mainHeader">
+
+	<section id="mainContainer">
 		
-		<h1>FreeXT</h1>
+		<!-- Main Header -->
 		
-		<button id="navButton" onclick="openNav();"><i class="fa fa-bars"></i></button>
+		<header id="mainHeader">
+			
+			<h1>FreeXT</h1>
+			
+			<button id="navButton" onclick="openNav();"><i class="fa fa-bars"></i></button>
+			
+			<button id="newNoteButton"><i class="far fa-edit"></i></button>
+			
+		</header>
 		
-		<button id="newNoteButton"><i class="far fa-edit"></i></button>
+		<!-- Main Section -->
 		
-	</header>
-	
-	<!-- Main Section -->
-	
-	<section id="mainSection">
-	
-		<input id="noteTitleInput" placeholder="Title"></input>
-	
-		<textarea id="mainTextbox" placeholder="Note contents"></textarea>
-	
+		<section id="mainSection">
+		
+			<input id="noteTitleInput" placeholder="Title"></input>
+		
+			<textarea id="mainTextbox" placeholder="Note contents"></textarea>
+		
+		</section>
+		
+		<nav id="mainNav" class="navClosed">
+			
+			<div class="navOption" onclick="openSettings();">Settings</div>
+			
+			<div class="navOption">Note 1</div>
+			
+			<div class="navOption">Note 2</div>
+			
+			<div class="navOption">Note 3</div>
+			
+		</nav>
+		
+		<div id="sectionCover" onclick="closeNav();"></div>
+		
 	</section>
 	
-	<nav id="mainNav" class="navClosed">
-		
-		<div class="navOption" onclick="openSettings();">Settings</div>
-		
-		<div class="navOption">Note 1</div>
-		
-		<div class="navOption">Note 2</div>
-		
-		<div class="navOption">Note 3</div>
-		
-	</nav>
+	<section id="settingsContainer">
 	
-	<div id="sectionCover" onclick="closeNav();"></div>
+		<h1>Settings</h1>
+	
+		<button id="backButon" onclick="openIndex();"><i class="fa fa-arrow-left"></i></button>
+		
+	</section>
+	
+	<p id="console"></p>
 
 </body>
 

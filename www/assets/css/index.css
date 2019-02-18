@@ -117,6 +117,12 @@
 	
 }
 
+#mainContainer{
+	
+	display: none;
+	
+}
+
 /* Classes */
 
 .navOpen{
@@ -163,15 +169,13 @@
 
 body{
 	
-	height: 100vh;
+	height: 0px;
 	
 	margin: 0px;
 	
 	background: #fffd8c;
 	
 	overflow-x: hidden;
-	
-	display: none;
 	
 }
 

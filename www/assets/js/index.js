@@ -1,13 +1,14 @@
 
-window.addEventListener("load", function(){
+function loadFunction(){
 	
 	$(document).ready(function(){
 		
-		$("body").fadeIn(500);
+		$("#mainContainer").fadeIn(500);
 		
 	});
-	
-});
+}
+
+window.addEventListener("load", loadFunction());
 
 function openNav(){
 	
@@ -66,9 +67,9 @@ function openSettings(){
 		
 		$(document).ready(function(){
 			
-			$("body").fadeOut(500, function(){
+			$("#mainContainer").fadeOut(500, function(){
 				
-				location.href = "settings.html";
+				loadSettings();
 				
 			});
 			
