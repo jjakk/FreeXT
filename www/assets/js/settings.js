@@ -31,10 +31,17 @@ function openIndex(){
 	
 }
 
-document.addEventListener("backbutton", onBackKeyDown, false);
-
-function onBackKeyDown() {
-    document.getElementById("console").innerHTML = "back button pressed";
+/*try{
+	navigator.Backbutton.goBack(function() {
+	  alert('success')
+	}, function() {
+	  alert('fail')
+	});
 }
+catch(e){
+	
+	alert("mission failed")
+	
+}*/
 
 
