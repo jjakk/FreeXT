@@ -1,4 +1,14 @@
 
+window.addEventListener("load", function(){
+	
+	$(document).ready(function(){
+		
+		$("body").fadeIn(500);
+		
+	});
+	
+});
+
 function openNav(){
 	
 	if(document.getElementById("mainNav").offsetWidth == 0){
@@ -52,7 +62,19 @@ async function closeNavCallback(callback){
 
 function openSettings(){
 	
-	closeNavCallback(function(){location.href = "settings.html"});
+	closeNavCallback(function(){
+		
+		$(document).ready(function(){
+			
+			$("body").fadeOut(500, function(){
+				
+				location.href = "settings.html";
+				
+			});
+			
+		});
+		
+	});
 	
 }
 

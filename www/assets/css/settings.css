@@ -9,15 +9,19 @@
 	
 	position: absolute;
 	
-	left: 5px;
+	left: 10px;
 	
 	top: 1vh;
 	
-	font-size: 25px;
-	
 	padding: 0px;
 	
-	color: #0080FF;
+	color: white;
+	
+}
+
+#settingsContainer{
+	
+	display: none;
 	
 }
 
@@ -27,13 +31,17 @@
 
 body{
 	
-	background: white;
+	background: #fffd8c;
+	
+	transition: 1s;
 	
 }
 
 h1{
 	
 	text-align: center;
+	
+	color: white;
 	
 }
 
