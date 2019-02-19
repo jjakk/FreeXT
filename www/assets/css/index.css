@@ -123,6 +123,24 @@
 	
 }
 
+#navPuller{
+	
+	position: absolute;
+	
+	right: 0px;
+	
+	width: 1vw;
+	
+	height: 100vh;
+	
+	background: green;
+	
+	z-index: 3;
+	
+	display: none;
+	
+}
+
 /* Classes */
 
 .navOpen{
