@@ -224,3 +224,11 @@ function openNote(option){
 	closeNav();
 	
 }
+
+function makeNewNote(){
+	
+	document.getElementById("noteTitleInput").value = "";
+	
+	document.getElementById("mainTextbox").value = "";
+	
+}
