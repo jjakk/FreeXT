@@ -62,23 +62,19 @@
 		
 		<section id="mainSection">
 		
-			<input id="noteTitleInput" placeholder="Title"></input>
+			<input id="noteTitleInput" placeholder="Title (Optional)"></input>
+			
+			<button onclick="saveNote();">Save Note</button>
+			
+			<p id="saveAlert"></p>
 		
-			<textarea id="mainTextbox" placeholder="Note contents"></textarea>
+			<textarea id="mainTextbox" placeholder="Notes"></textarea>
 		
 		</section>
 		
 		<nav id="mainNav" class="navClosed">
 			
 			<div class="navOption" onclick="openSettings();">Settings</div>
-			
-			<div class="navOption">Note 1</div>
-			
-			<div class="navOption">Note 2</div>
-			
-			<div class="navOption">Note 3</div>
-			
-			<div id="navPuller"></div>
 			
 		</nav>
 		
