@@ -5,6 +5,12 @@ async function loadSettings(){
 	
 	await sleep(250);
 	
+	if(localStorage.getItem("textboxFont") != "default"){
+		
+		document.getElementById("fontSelect").value = localStorage.getItem("textboxFont");
+		
+	}
+	
 	$(document).ready(function(){
 		
 		$("#settingsContainer").fadeIn(500);
@@ -30,6 +36,18 @@ function openIndex(){
 		});
 		
 	});
+	
+}
+
+function setFont(ele){
+	
+	localStorage.setItem("textboxFont", ele.value);
+	
+	if(localStorage.getItem("textboxFont") != "default"){
+		
+		document.getElementById("fontSelect").style.fontFamily = localStorage.getItem("textboxFont");
+		
+	}
 	
 }
 

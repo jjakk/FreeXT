@@ -13,7 +13,11 @@ document.addEventListener('deviceready', function(){
 	
 	window.addEventListener("orientationchange", function(){
 		
-		screen.orientation.lock('portrait');
+		if(window.matchMedia("(max-width: 600px)").matches){
+			
+			screen.orientation.lock('portrait');
+			
+		}
 		
 	});
 	

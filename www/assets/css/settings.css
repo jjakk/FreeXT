@@ -41,6 +41,30 @@
 	
 }
 
+#settingsContainer p{
+	
+	position: absolute;
+	
+	width: 100vw;
+	
+	text-align: center;
+	
+	color: white;
+	
+	font-size: 20px;
+	
+	margin: 0px;
+	
+	top: 7.5vh;
+	
+}
+
+#settingsContainer select{
+	
+	padding: 5px;
+	
+}
+
 /* Classes */
 
 /* Tags */
@@ -76,6 +100,12 @@ h1{
 	#settingsContainer h1{
 		
 		top: 3vh;
+		
+	}
+	
+	#settingsContainer p{
+		
+		top: 10vh;
 		
 	}
 	

@@ -29,6 +29,7 @@
 <script src="assets/js/main.js"></script>
 <script src="assets/js/index.js"></script>
 <script src="assets/js/settings.js"></script>
+<script src="assets/js/memory.js"></script>
 
 <!-- Css -->
 
@@ -87,6 +88,22 @@
 		<h1>Settings</h1>
 	
 		<button id="backButon" onclick="openIndex();"><i class="fa fa-arrow-left"></i></button>
+		
+		<p>
+			
+			Font - 
+			<select id="fontSelect" onchange="setFont(this);">
+				<option value="Arial">Arial</option>
+				<option value="Comic Sans MS">Comic Sans MS</option>
+				<option value="Courier New">Courier New</option>
+				<option value="default" selected="selected">Roboto (Default)</option>
+				<option value="Tahoma">Tahoma</option>
+				<option value="Times New Roman">Times New Roman</option>
+				<option value="Trebuchet MS">Trebuchet MS</option>
+				<option value="Verdana">Verdana</option>
+			</select>
+			
+		</p>
 		
 	</section>
 

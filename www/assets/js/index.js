@@ -9,7 +9,25 @@ function loadFunction(){
 	
 	$(document).ready(function(){
 		
-		$("#mainContainer").fadeIn(250);
+		$("#mainContainer").fadeIn(250, function(){
+			
+			if(localStorage.getItem("textboxFont") != "default"){
+				
+				document.getElementById("noteTitleInput").style.fontFamily = localStorage.getItem("textboxFont");
+				
+				document.getElementById("mainTextbox").style.fontFamily = localStorage.getItem("textboxFont");
+				
+			}
+			
+			else{
+				
+				document.getElementById("noteTitleInput").style.fontFamily = "robotoRegular";
+				
+				document.getElementById("mainTextbox").style.fontFamily = "robotoRegular";
+				
+			}
+			
+		});
 		
 	});
 	
