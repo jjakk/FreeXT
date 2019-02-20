@@ -100,11 +100,13 @@ function openNav(){
 								
 								noteX.innerHTML = "<br/><i class='fa fa-trash'></i>";
 								
-								noteX.onclick = (function(){console.log(1)});
+								noteX.onclick = (function(){deleteNote(this);});
 								
 							}
 							
 							$(".deleteButton").fadeIn(500);
+							
+							$(".deleteButton").css("transition", "0.25s;");
 							
 						}
 						
@@ -282,5 +284,19 @@ function makeNewNote(){
 	document.getElementById("noteTitleInput").value = "";
 	
 	document.getElementById("mainTextbox").value = "";
+	
+}
+
+function deleteNote(ele){
+	
+	localStorage.removeItem("note-" + ele.parentElement.innerText.split('\n')[0]);
+	
+	ele.parentElement.style.transition = "0s";
+	
+	$(document).ready(function(){
+		
+		$(ele.parentElement).slideUp(250);
+		
+	});
 	
 }

@@ -231,8 +231,6 @@
 	
 	display: none;
 	
-	transition: 0.25s;
-	
 }
 
 .deleteButton:active{
