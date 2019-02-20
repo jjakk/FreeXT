@@ -179,7 +179,7 @@
 	
 	text-align: center;
 	
-	width: 40vw;
+	width: 38vw;
 	
 	padding-top: 20px;
 	
@@ -294,7 +294,11 @@ nav{
 	
 	.navOption{
 		
-		width: 65vw;
+		width: 56vw;
+		
+		padding-left: 5vw;
+	
+		padding-right: 5vw;
 		
 	}
 	
