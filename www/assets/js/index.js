@@ -98,7 +98,9 @@ function openNav(){
 								
 								noteX.className = "deleteButton";
 								
-								noteX.innerHTML = "<br/><i class='fa fa-times'></i>";
+								noteX.innerHTML = "<br/><i class='fa fa-trash'></i>";
+								
+								noteX.onclick = (function(){console.log(1)});
 								
 							}
 							

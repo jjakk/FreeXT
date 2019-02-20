@@ -209,31 +209,35 @@
 
 .deleteButton{
 	
-	width: 30px;
+	width: 40px;
 	
-	height: 30px;
+	height: 40px;
 	
-	background: #ED2939;
+	background: #252a2d;
 	
 	position: absolute;
 	
-	right: 15px;
+	right: 20px;
 	
 	top: 50%;
 	
-	margin-top: -15px;
+	margin-top: -20px;
 	
-	border-radius: 25px;
-	
-	line-height: 7.5px;
+	line-height: 10px;
 	
 	text-align: center;
 	
 	z-index: 4;
 	
-	background: #252a2d;
-	
 	display: none;
+	
+	transition: 0.25s;
+	
+}
+
+.deleteButton:active{
+	
+	background: #34393d;
 	
 }
 
