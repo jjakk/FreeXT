@@ -72,7 +72,11 @@ function openNav(){
 				
 				newNote.onclick = function(){openNote(this)};
 				
-				newNote.onmousedown = async function(){
+				newNote.onmousedown = function(){startDeleteHold();};
+				
+				newNote.ontouchstart = function(){startDeleteHold();};
+				
+				async function startDeleteHold(){
 					
 					showDelete = true;
 					
@@ -106,11 +110,9 @@ function openNav(){
 					
 				};
 				
-				document.body.onmouseup = function(){
-					
-					showDelete = false;
-					
-				};
+				document.body.onmouseup = function(){showDelete = false;};
+				
+				document.body.ontouchend = function(){showDelete = false;};
 				
 			}
 			
