@@ -177,6 +177,8 @@
 
 .navOption{
 	
+	position: relative;
+	
 	text-align: center;
 	
 	width: 38vw;
@@ -202,6 +204,28 @@
 .navOption:active{
 	
 	background: #252a2d;
+	
+}
+
+.deleteButton{
+	
+	width: 3vw;
+	
+	height: 100%;
+	
+	background: #ED2939;
+	
+	position: absolute;
+	
+	right: 0;
+	
+	top: 0;
+	
+	text-align: center;
+	
+	z-index: 4;
+	
+	display: none;
 	
 }
 

@@ -1,4 +1,10 @@
 
+var showDelete = true;
+
+var deleteingNotes = false;
+
+window.addEventListener("load", loadFunction());
+
 function loadFunction(){
 	
 	$(document).ready(function(){
@@ -10,8 +16,6 @@ function loadFunction(){
 	settingsOpen = false;
 	
 }
-
-window.addEventListener("load", loadFunction());
 
 function allStorage() {
 
@@ -68,6 +72,46 @@ function openNav(){
 				
 				newNote.onclick = function(){openNote(this)};
 				
+				newNote.onmousedown = async function(){
+					
+					showDelete = true;
+					
+					setTimeout(function(){
+						
+						if(showDelete && !deleteingNotes){
+							
+							//On Successful Tap and Hold
+							
+							navigator.vibrate(500);
+							
+							deleteingNotes = true;
+							
+							for(var i = 1; i < document.getElementsByClassName("navOption").length; i++){
+								
+								document.getElementsByClassName("navOption")[i].innerHTML = document.getElementsByClassName("navOption")[i].innerText;
+								
+								noteX = createNewElement("div", null, document.getElementsByClassName("navOption")[i]);
+								
+								noteX.className = "deleteButton";
+								
+								noteX.innerHTML = "<i class='fa fa-times'></i>";
+								
+							}
+							
+							$(".deleteButton").slideDown(500);
+							
+						}
+						
+					}, 2000);
+					
+				};
+				
+				document.body.onmouseup = function(){
+					
+					showDelete = false;
+					
+				};
+				
 			}
 			
 		}
@@ -89,6 +133,8 @@ function openNav(){
 function closeNav(){
 	
 	if(document.getElementById("mainNav").offsetWidth != 0){
+		
+		deleteingNotes = false;
 		
 		document.getElementById("mainNav").className = "navClosed";
 		
@@ -215,13 +261,15 @@ function saveNote(){
 
 function openNote(option){
 	
-	console.log(option)
-	
-	document.getElementById("noteTitleInput").value = option.innerText;
-	
-	document.getElementById("mainTextbox").value = localStorage.getItem("note-" + option.innerText);
-	
-	closeNav();
+	if(!deleteingNotes){
+		
+		document.getElementById("noteTitleInput").value = option.innerText;
+		
+		document.getElementById("mainTextbox").value = localStorage.getItem("note-" + option.innerText);
+		
+		closeNav();
+		
+	}
 	
 }
 
