@@ -86,7 +86,7 @@ function openNav(){
 							
 							//On Successful Tap and Hold
 							
-							navigator.vibrate(500);
+							navigator.vibrate(50);
 							
 							deleteingNotes = true;
 							
@@ -98,15 +98,15 @@ function openNav(){
 								
 								noteX.className = "deleteButton";
 								
-								noteX.innerHTML = "<i class='fa fa-times'></i>";
+								noteX.innerHTML = "<br/><i class='fa fa-times'></i>";
 								
 							}
 							
-							$(".deleteButton").slideDown(500);
+							$(".deleteButton").fadeIn(500);
 							
 						}
 						
-					}, 2000);
+					}, 1000);
 					
 				};
 				
