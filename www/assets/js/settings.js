@@ -49,6 +49,12 @@ function setFont(ele){
 		
 	}
 	
+	else{
+		
+		document.getElementById("fontSelect").style.fontFamily = "roboto";
+		
+	}
+	
 }
 
 
