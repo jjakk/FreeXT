@@ -12,6 +12,7 @@
     "dependencies": {
         "cordova-plugin-backbutton": "git+https://github.com/mohamed-salah/phonegap-backbutton-plugin.git",
         "cordova-plugin-screen-orientation": "^3.0.1",
+        "cordova-plugin-splashscreen": "^5.0.2",
         "cordova-plugin-vibration": "^3.1.0",
         "cordova-plugin-whitelist": "^1.3.3",
         "es6-promise-plugin": "^4.2.2"
@@ -21,7 +22,8 @@
             "cordova-plugin-whitelist": {},
             "cordova-plugin-screen-orientation": {},
             "cordova-plugin-backbutton": {},
-            "cordova-plugin-vibration": {}
+            "cordova-plugin-vibration": {},
+            "cordova-plugin-splashscreen": {}
         },
         "platforms": []
     }
