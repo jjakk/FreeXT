@@ -17,6 +17,12 @@ async function loadSettings(){
 		
 	});
 	
+	for(var i = 0; i < document.getElementById("fontSelect").children.length; i++){
+		
+		document.getElementById("fontSelect").children[i].style.fontFamily = document.getElementById("fontSelect").children[i].value;
+		
+	}
+	
 	settingsOpen = true;
 	
 };

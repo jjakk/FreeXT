@@ -1,22 +1,4 @@
 
-/* Font Imports */
-
-@font-face{
-	
-	src: url("fonts/Roboto-Light.ttf");
-	
-	font-family: roboto;
-	
-}
-
-@font-face{
-	
-	src: url("fonts/Roboto-Regular.ttf");
-	
-	font-family: robotoRegular;
-	
-}
-
 /* Normal View */
 
 /* Id's */
