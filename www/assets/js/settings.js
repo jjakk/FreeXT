@@ -13,7 +13,13 @@ async function loadSettings(){
 	
 	$(document).ready(function(){
 		
-		$("#settingsContainer").fadeIn(500);
+		$("#settingsContainer").fadeIn(500, function(){
+			
+			document.getElementsByClassName("divider")[0].style.width = "50vw";
+			
+			document.getElementsByClassName("divider")[0].style.marginLeft = "-25vw";
+			
+		});
 		
 	});
 	
@@ -34,6 +40,10 @@ function openIndex(){
 		$("#settingsContainer").fadeOut(250, async function(){
 			
 			document.body.style.background = "#fffd8c";
+			
+			document.getElementsByClassName("divider")[0].style.width = "0px";
+			
+			document.getElementsByClassName("divider")[0].style.marginLeft = "0px";
 			
 			await sleep(500);
 			

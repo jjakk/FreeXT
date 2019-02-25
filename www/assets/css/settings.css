@@ -39,7 +39,7 @@
 	
 	margin: 0px;
 	
-	top: 2vh;
+	top: 15px;
 	
 }
 
@@ -57,7 +57,7 @@
 	
 	margin: 0px;
 	
-	top: 9vh;
+	top: 85px;
 	
 }
 
@@ -70,6 +70,25 @@
 }
 
 /* Classes */
+
+.divider{
+	
+	position: absolute;
+	
+	top: 60px;
+	
+	left: 50vw;
+	
+	background: white;
+	
+	width: 0px;
+	
+	height: 1px;
+	
+	transition: 1s;
+	
+}
+
 
 /* Tags */
 
@@ -101,19 +120,13 @@ h1{
 		
 	}
 	
-	#settingsContainer h1{
-		
-		top: 3vh;
-		
-	}
-	
-	#settingsContainer p{
-		
-		top: 11vh;
-		
-	}
-	
 	/* Classes */
+	
+	.divider{
+		
+		transition: 0.5s;
+		
+	}
 	
 	/* Tags */
 
