@@ -5,13 +5,25 @@ async function loadSettings(){
 	
 	await sleep(250);
 	
-	if(localStorage.getItem("textboxFont") != "default"){
-		
-		document.getElementById("fontSelect").value = localStorage.getItem("textboxFont");
-		
-	}
-	
 	$(document).ready(function(){
+		
+		if(localStorage.getItem("textboxFont") != "default"){
+			
+			document.getElementById("fontSelect").value = localStorage.getItem("textboxFont");
+			
+		}
+		
+		if(localStorage.getItem("voiceRecognitionEnabled") == "true"){
+			
+			document.getElementById("voiceRecognitionCheckbox").checked = true;
+			
+		}
+		
+		else{
+			
+			document.getElementById("voiceRecognitionCheckbox").checked = false;
+			
+		}
 		
 		$("#settingsContainer").fadeIn(500, function(){
 			

@@ -30,6 +30,7 @@
 <script src="assets/js/index.js"></script>
 <script src="assets/js/settings.js"></script>
 <script src="assets/js/memory.js"></script>
+<script src="assets/js/voiceRecognition.js"></script>
 
 <!-- Css -->
 
@@ -69,6 +70,14 @@
 			<button id="saveButton" onclick="saveNote();">Save Note</button>
 			
 			<p id="saveAlert"></p>
+			
+			<div id="micContainer">
+			
+				<button id="micButton"><i class="fa fa-microphone"></i></button>
+				
+				<div id="micDot"></div>
+			
+			</div>
 		
 			<textarea id="mainTextbox" placeholder="Notes"></textarea>
 			
@@ -117,7 +126,7 @@
 			
 			Speech Recognition 
 			<label class="switch">
-			  <input onchange="setVoiceRecognition(this);" type="checkbox">
+			  <input id="voiceRecognitionCheckbox" onchange="setVoiceRecognition(this);" type="checkbox">
 			  <span class="slider round"></span>
 			</label>
 			

@@ -59,8 +59,6 @@
 	
 	position: static;
 	
-	font-size: 15px;
-	
 	display: block;
 	
 	margin: auto;
@@ -68,8 +66,6 @@
 	padding: 10px;
 	
 	border: 1px solid black;
-	
-	border-radius: 5px;
 	
 	margin-bottom: 20px;
 	
@@ -171,7 +167,45 @@
 
 #saveButton{
 	
+	font-size: 15px;
+	
+	border-radius: 5px;
+	
 	background: #fffd8c;
+	
+}
+
+#micButton{
+	
+	font-size: 30px;
+	
+	border-radius: 15px;
+	
+}
+
+#micContainer{
+	
+	display: none;
+	
+}
+
+#micDot{
+	
+	width: 10px;
+	
+	height: 10px;
+	
+	background: red;
+	
+	border-radius: 10px;
+	
+	display: none;
+	
+	margin: auto;
+	
+	margin-top: -10px;
+	
+	margin-bottom: 10px;
 	
 }
 

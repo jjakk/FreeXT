@@ -9,25 +9,37 @@ function loadFunction(){
 	
 	$(document).ready(function(){
 		
-		$("#mainContainer").fadeIn(250, function(){
+		if(localStorage.getItem("textboxFont") != "default"){
 			
-			if(localStorage.getItem("textboxFont") != "default"){
-				
-				document.getElementById("noteTitleInput").style.fontFamily = localStorage.getItem("textboxFont");
-				
-				document.getElementById("mainTextbox").style.fontFamily = localStorage.getItem("textboxFont");
-				
-			}
+			document.getElementById("noteTitleInput").style.fontFamily = localStorage.getItem("textboxFont");
 			
-			else{
-				
-				document.getElementById("noteTitleInput").style.fontFamily = "robotoRegular";
-				
-				document.getElementById("mainTextbox").style.fontFamily = "robotoRegular";
-				
-			}
+			document.getElementById("mainTextbox").style.fontFamily = localStorage.getItem("textboxFont");
 			
-		});
+		}
+		
+		else{
+			
+			document.getElementById("noteTitleInput").style.fontFamily = "robotoRegular";
+			
+			document.getElementById("mainTextbox").style.fontFamily = "robotoRegular";
+			
+		}
+		
+		if(localStorage.getItem("voiceRecognitionEnabled") == "true"){
+			
+			document.getElementById("micContainer").style.display = "block";
+			
+			setupVoiceRecognition();
+			
+		}
+		
+		else{
+			
+			document.getElementById("micContainer").style.display = "none";
+			
+		}
+		
+		$("#mainContainer").fadeIn(250);
 		
 	});
 	
