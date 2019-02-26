@@ -73,5 +73,13 @@ function setFont(ele){
 	
 }
 
+function setVoiceRecognition(ele){
+	
+	if(ele.checked) localStorage.setItem("voiceRecognitionEnabled", true);
+	
+	else localStorage.setItem("voiceRecognitionEnabled", false);
+	
+}
+
 
 
