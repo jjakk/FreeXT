@@ -24,9 +24,9 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
-    <splash height="300" src="www/assets/img/splashscreenWindows.png" width="620" />
     <plugin name="cordova-plugin-screen-orientation" spec="^3.0.1" />
     <plugin name="cordova-plugin-backbutton" spec="https://github.com/mohamed-salah/phonegap-backbutton-plugin.git" />
     <plugin name="cordova-plugin-vibration" spec="^3.1.0" />
     <plugin name="cordova-plugin-splashscreen" spec="^5.0.2" />
+    <plugin name="cordova-plugin-speechrecognition" spec="^1.2.0" />
 </widget>
