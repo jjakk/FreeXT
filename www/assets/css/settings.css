@@ -94,6 +94,7 @@
   display: inline-block;
   width: 45px;
   height: 24px;
+  vertical-align: middle;
 }
 
 .switch input {
