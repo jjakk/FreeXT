@@ -90,10 +90,52 @@ function setupVoiceRecognition(){
 		}
 		else{
 			
-			console.log("oh well");
+			$("#voiceRecognitonAlert").slideDown(250);
+			
+			document.getElementById("voiceRecognitonAlert").innerHTML = "Your browser does not support speech recognition";
 			
 			//Speech rec plugin
 			
+			/*try{
+				
+				window.addEventListener("load", function(){
+					
+					window.plugins.speechRecognition.requestPermission(Function successCallback, Function errorCallback);
+					
+				});
+				
+				if(window.plugins.speechRecognition.hasPermission(Function successCallback, Function errorCallback)){
+					
+					window.plugins.speechRecognition.isRecognitionAvailable(Function successCallback, Function errorCallback);
+					
+					/*let options = {
+					  String language,
+					  Number matches,
+					  String prompt,      // Android only
+					  Boolean showPopup,  // Android only
+					  Boolean showPartial 
+					}
+					
+					document.getElementById("micButton").addEventListener("click", function(){
+						
+						window.plugins.speechRecognition.startListening(Function successCallback, Function errorCallback, Object options);
+						
+					});
+					
+				}
+				
+			}
+			
+			catch(e){
+				
+				$("#voiceRecognitonAlert").slideDown(250);
+			
+				document.getElementById("voiceRecognitonAlert").innerHTML = "Your browser does not support speech recognition";
+				
+			}
+			
+			*/
+			 
 		}
 		
 	});
