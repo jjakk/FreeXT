@@ -90,54 +90,60 @@ function setupVoiceRecognition(){
 		}
 		else{
 			
-			$("#voiceRecognitonAlert").slideDown(250);
-			
-			document.getElementById("voiceRecognitonAlert").innerHTML = "Your browser does not support speech recognition";
-			
 			//Speech rec plugin
 			
-			/*try{
+			try{
 				
-				window.addEventListener("load", function(){
+				window.plugins.speechRecognition.requestPermission(function (){
 					
-					window.plugins.speechRecognition.requestPermission(Function successCallback, Function errorCallback);
+				}, function (err){
+					
+					
 					
 				});
 				
-				if(window.plugins.speechRecognition.hasPermission(Function successCallback, Function errorCallback)){
-					
-					window.plugins.speechRecognition.isRecognitionAvailable(Function successCallback, Function errorCallback);
-					
-					/*let options = {
-					  String language,
-					  Number matches,
-					  String prompt,      // Android only
-					  Boolean showPopup,  // Android only
-					  Boolean showPartial 
+				window.plugins.speechRecognition.isRecognitionAvailable(function(available){
+					if(available){
+						
+						document.getElementById("micButton").addEventListener("click", function(){
+							
+							window.plugins.speechRecognition.startListening(function(result){
+								// Show results in the console
+								console.log(result);
+							}, function(err){
+								console.error(err);
+							}, {
+								language: "en-US",
+								showPopup: true
+							});
+							
+						});
+						
 					}
+				}, function(err){
 					
-					document.getElementById("micButton").addEventListener("click", function(){
-						
-						window.plugins.speechRecognition.startListening(Function successCallback, Function errorCallback, Object options);
-						
-					});
+					console.error(err);
 					
-				}
+				});
 				
 			}
 			
 			catch(e){
 				
-				$("#voiceRecognitonAlert").slideDown(250);
-			
-				document.getElementById("voiceRecognitonAlert").innerHTML = "Your browser does not support speech recognition";
+				voiceRecNotSupported();
 				
 			}
-			
-			*/
 			 
 		}
 		
 	});
+	
+}
+
+function voiceRecNotSupported(){
+	
+	$("#voiceRecognitonAlert").slideDown(250);
+	
+	document.getElementById("voiceRecognitonAlert").innerHTML = "Your browser does not support speech recognition";
 	
 }
