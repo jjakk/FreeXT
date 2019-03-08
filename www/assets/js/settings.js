@@ -25,11 +25,17 @@ async function loadSettings(){
 			
 		}
 		
+		$("#settingsHeader").addClass("slideDown");
+		
+		$("#settingsParagraph").addClass("slideUp");
+		
 		$("#settingsContainer").fadeIn(500, function(){
 			
 			document.getElementsByClassName("divider")[0].style.width = "50vw";
 			
 			document.getElementsByClassName("divider")[0].style.marginLeft = "-25vw";
+			
+			
 			
 		});
 		

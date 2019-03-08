@@ -114,7 +114,7 @@ function setupVoiceRecognition(){
 								console.error(err);
 							}, {
 								language: "en-US",
-								showPopup: true
+								showPopup: false
 							});
 							
 						});
