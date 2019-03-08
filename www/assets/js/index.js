@@ -400,7 +400,23 @@ function saveAsTxt(){
 
 			window.resolveLocalFileSystemURL(path, function(dir) {
 				dir.getFile(filename, {create:true}, function(fileEntry) {
+					document.getElementById("txtAlert").innerText = "Saved to your downloads folder";
+		
+					document.getElementById("txtAlert").style.color = "black";
 					
+					$(document).ready(async function(){
+						
+						if(getComputedStyle(document.getElementById("txtAlert"), null).display == "none"){
+							
+							$("#txtAlert").slideDown(500);
+							
+							await sleep(2000);
+							
+							$("#txtAlert").slideUp(500);
+							
+						}
+						
+					});
 				});
 			});
 			
