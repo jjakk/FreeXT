@@ -31,6 +31,7 @@
 <script src="assets/js/settings.js"></script>
 <script src="assets/js/memory.js"></script>
 <script src="assets/js/voiceRecognition.js"></script>
+<script src="assets/js/downloadFile.js"></script>
 
 <!-- Css -->
 
@@ -78,6 +79,14 @@
 				<div id="micDot"></div>
 				
 				<p id="voiceRecognitonAlert"></p>
+			
+			</div>
+			
+			<div id="saveTxtContainer">
+			
+				<button id="saveTxtButton" onclick="saveAsTxt();">Save as a TXT file</button>
+				
+				<p id="txtAlert"></p>
 			
 			</div>
 		
@@ -132,11 +141,11 @@
 			  <span class="slider round"></span>
 			</label>-->
 			
-			<!--Speech Recognition 
+			TXT export 
 			<label class="switch">
-			  <input id="voiceRecognitionCheckbox" onchange="setVoiceRecognition(this);" type="checkbox">
+			  <input id="txtExportSwitch" onchange="setTxtExport(this);" type="checkbox">
 			  <span class="slider round"></span>
-			</label>-->
+			</label>
 			
 		</p>
 		

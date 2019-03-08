@@ -209,6 +209,16 @@
 	
 }
 
+#saveTxtButton{
+	
+	font-size: 15px;
+	
+	border-radius: 5px;
+	
+	background: #fffd8c;
+	
+}
+
 /* Classes */
 
 .navOpen{

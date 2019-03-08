@@ -13,7 +13,7 @@ async function loadSettings(){
 			
 		}
 		
-		if(localStorage.getItem("voiceRecognitionEnabled") == "true"){
+		/*if(localStorage.getItem("voiceRecognitionEnabled") == "true"){
 			
 			document.getElementById("voiceRecognitionCheckbox").checked = true;
 			
@@ -22,6 +22,18 @@ async function loadSettings(){
 		else{
 			
 			document.getElementById("voiceRecognitionCheckbox").checked = false;
+			
+		}*/
+		
+		if(localStorage.getItem("txtExportEnabled") == "true"){
+			
+			document.getElementById("txtExportSwitch").checked = true;
+			
+		}
+		
+		else{
+			
+			document.getElementById("txtExportSwitch").checked = false;
 			
 		}
 		
@@ -96,6 +108,14 @@ function setVoiceRecognition(ele){
 	if(ele.checked) localStorage.setItem("voiceRecognitionEnabled", true);
 	
 	else localStorage.setItem("voiceRecognitionEnabled", false);
+	
+}
+
+function setTxtExport(ele){
+	
+	if(ele.checked) localStorage.setItem("txtExportEnabled", true);
+	
+	else localStorage.setItem("txtExportEnabled", false);
 	
 }
 

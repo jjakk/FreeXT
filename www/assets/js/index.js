@@ -39,6 +39,18 @@ function loadFunction(){
 			
 		}
 		
+		if(localStorage.getItem("txtExportEnabled") == "true"){
+			
+			document.getElementById("saveTxtContainer").style.display = "block";
+			
+		}
+		
+		else{
+			
+			document.getElementById("saveTxtContainer").style.display = "none";
+			
+		}
+		
 		$("#mainContainer").fadeIn(250);
 		
 	});
@@ -328,5 +340,61 @@ function deleteNote(ele){
 		$(ele.parentElement).slideUp(250);
 		
 	});
+	
+}
+
+function saveAsTxt(){
+	
+	fileTitle = document.getElementById("noteTitleInput").value;
+	
+	fileContents = document.getElementById("mainTextbox").value;
+	
+	//Empty Contents - Does not work
+	
+	if(fileContents == ""){
+		
+		document.getElementById("txtAlert").innerText = "Please enter notes.";
+		
+		document.getElementById("txtAlert").style.color = "red";
+		
+		$(document).ready(async function(){
+			
+			if(getComputedStyle(document.getElementById("txtAlert"), null).display == "none"){
+				
+				$("#txtAlert").slideDown(500);
+				
+				await sleep(2000);
+				
+				$("#txtAlert").slideUp(500);
+				
+			}
+			
+		});
+		
+	}
+	
+	//Has contents
+	
+	else{
+		
+		if(fileTitle == ""){
+			
+			if(fileContents.length >= 15){
+				
+				fileTitle = fileContents.substring(0, 14);
+				
+			}
+			
+			else{
+				
+				fileTitle = fileContents;
+				
+			}
+			
+		}
+		
+		download(fileTitle + ".txt", fileContents);
+		
+	}
 	
 }
