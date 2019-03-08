@@ -11,6 +11,7 @@
     "license": "Apache-2.0",
     "dependencies": {
         "cordova-plugin-backbutton": "git+https://github.com/mohamed-salah/phonegap-backbutton-plugin.git",
+        "cordova-plugin-file": "^6.0.1",
         "cordova-plugin-screen-orientation": "^3.0.1",
         "cordova-plugin-speechrecognition": "^1.2.0",
         "cordova-plugin-splashscreen": "^5.0.2",
@@ -25,7 +26,8 @@
             "cordova-plugin-backbutton": {},
             "cordova-plugin-vibration": {},
             "cordova-plugin-splashscreen": {},
-            "cordova-plugin-speechrecognition": {}
+            "cordova-plugin-speechrecognition": {},
+            "cordova-plugin-file": {}
         },
         "platforms": []
     }

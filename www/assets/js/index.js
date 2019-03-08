@@ -393,7 +393,24 @@ function saveAsTxt(){
 			
 		}
 		
-		download(fileTitle + ".txt", fileContents);
+		try{
+			
+			var path = "file:///storage/emulated/0/Download";
+			var filename = fileTitle + ".txt";
+
+			window.resolveLocalFileSystemURL(path, function(dir) {
+				dir.getFile(filename, {create:true}, function(fileEntry) {
+					
+				});
+			});
+			
+		}
+		
+		catch(e){
+			
+			download(fileTitle + ".txt", fileContents);
+			
+		}
 		
 	}
 	
