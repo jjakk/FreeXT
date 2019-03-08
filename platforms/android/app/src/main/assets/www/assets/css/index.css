@@ -1,0 +1,414 @@
+
+/* Font Imports */
+
+/* Normal View */
+
+/* Id's */
+
+#mainHeader{
+	
+	/*background: linear-gradient(to right,  #524364 0%, #4873a6 100%);*/
+	
+	background: #fffd8c;
+	
+	height: 100px;
+	
+}
+
+#mainHeader h1{
+	
+	position: absolute;
+	
+	width: 100vw;
+	
+	color: black;
+	
+	margin: 0px;
+	
+	text-align: center;
+	
+	top: 30px;
+	
+}
+
+#mainHeader button{
+	
+	background: #fffd8c;
+	
+}
+
+#navButton{
+	
+	left: 1vw;
+	
+}
+
+#newNoteButton{
+	
+	right: 1vw;
+	
+}
+
+#mainSection{
+	
+	min-height: 550px;
+	
+}
+
+#mainSection button{
+	
+	position: static;
+	
+	display: block;
+	
+	margin: auto;
+	
+	padding: 10px;
+	
+	border: 1px solid black;
+	
+	margin-bottom: 20px;
+	
+	transition: 0.5s;
+	
+}
+
+#mainSection p{
+	
+	text-align: center;
+	
+	display: none;
+	
+}
+
+#mainSection button:active{
+	
+	opacity: 0.5;
+	
+}
+
+#mainTextbox{
+	
+	display: block;
+	
+	margin: auto;
+	
+	background: #fffd8c;
+	
+	width: 95vw;
+	
+	min-height: 500px;
+	
+	border: 1px solid black;
+	
+	border-radius: 5px;
+	
+	padding: 10px;
+	
+	resize: none;
+	
+	font-family: robotoRegular;
+	
+	margin-bottom: 15px;
+	
+	font-size: 15px;
+	
+}
+
+#noteTitleInput{
+	
+	display: block;
+	
+	margin: auto;
+	
+	background: #fffd8c;
+	
+	width: 95vw;
+	
+	height: 50px;
+	
+	margin-bottom: 20px;
+	
+	border: 1px solid black;
+	
+	border-radius: 5px;
+	
+	padding: 10px;
+	
+	resize: none;
+	
+	font-family: robotoRegular;
+	
+	font-size: 15px;
+	
+}
+
+#sectionCover{
+	
+	position: fixed;
+	
+	top: 0px;
+	
+	left: 0px;
+	
+	width: 100vw;
+	
+	height: 100vh;
+	
+	display: none;
+	
+}
+
+#mainContainer{
+	
+	display: none;
+	
+}
+
+#saveButton{
+	
+	font-size: 15px;
+	
+	border-radius: 5px;
+	
+	background: #fffd8c;
+	
+}
+
+#micButton{
+	
+	font-size: 30px;
+	
+	border-radius: 15px;
+	
+}
+
+#micContainer{
+	
+	display: none;
+	
+}
+
+#micDot{
+	
+	width: 10px;
+	
+	height: 10px;
+	
+	background: red;
+	
+	border-radius: 10px;
+	
+	display: none;
+	
+	margin: auto;
+	
+	margin-top: -10px;
+	
+	margin-bottom: 10px;
+	
+}
+
+#saveTxtButton{
+	
+	font-size: 15px;
+	
+	border-radius: 5px;
+	
+	background: #fffd8c;
+	
+}
+
+/* Classes */
+
+.navOpen{
+	
+	width: 40vw;
+	
+}
+
+.navClosed{
+	
+	width: 0vw;
+	
+}
+
+.navOption{
+	
+	position: relative;
+	
+	text-align: center;
+	
+	width: 38vw;
+	
+	padding-top: 20px;
+	
+	padding-bottom: 20px;
+	
+	padding-left: 1vw;
+	
+	padding-right: 1vw;
+	
+	color: white;
+	
+	float: right;
+	
+	word-break: break-all;
+	
+	transition: 0.25s;
+	
+}
+
+.navOption:active{
+	
+	background: #252a2d;
+	
+}
+
+.deleteButton{
+	
+	width: 40px;
+	
+	height: 40px;
+	
+	background: #252a2d;
+	
+	position: absolute;
+	
+	right: 20px;
+	
+	top: 50%;
+	
+	margin-top: -20px;
+	
+	line-height: 10px;
+	
+	text-align: center;
+	
+	z-index: 4;
+	
+	display: none;
+	
+}
+
+.deleteButton:active{
+	
+	background: #34393d;
+	
+}
+
+/* Tags */
+
+body{
+	
+	height: 100vh;
+	
+	margin: 0px;
+	
+	background: #fffd8c;
+	
+	overflow-x: hidden;
+	
+}
+
+nav{
+	
+	position: fixed;
+	
+	width: 0vw;
+	
+	height: 100vh;
+	
+	background: #34393d;
+	
+	transition: 1s;
+	
+	left: 0;
+	
+	top: 0;
+	
+	z-index: 1;
+	
+	overflow: auto;
+	
+}
+
+/* Other */
+
+/* Mobile View */
+
+@media only screen and (max-width: 600px){
+/* Id's */
+	
+	#mainHeader{
+		
+		height: 75px;
+		
+	}
+	
+	#mainHeader h1{
+		
+		top: 20px;
+		
+	}
+	
+	#mainHeader button{
+		
+		top: 15px;
+		
+	}
+	
+	#mainSection{
+		
+		min-height: 550px;
+		
+	}
+	
+	#mainTextbox{
+		
+		width: 90vw;
+		
+	}
+	
+	#noteTitleInput{
+		
+		width: 90vw;
+		
+	}
+	
+	/* Classes */
+	
+	.navOpen{
+		
+		width: 65vw;
+		
+	}
+	
+	.navOption{
+		
+		width: 56vw;
+		
+		padding-left: 5vw;
+	
+		padding-right: 5vw;
+		
+	}
+	
+	/* Tags */
+	
+	nav{
+		
+		transition: 0.5s;
+		
+	}
+
+	/* Other */
+	
+	*{
+		
+		cursor: default;
+		
+	}
+	
+}
+

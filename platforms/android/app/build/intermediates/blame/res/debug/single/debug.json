@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\Users\\Jak\\Desktop\\githubStuff\\FreeXT-Mobile\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_icon.png.flat",
+        "source": "C:\\Users\\Jak\\Desktop\\githubStuff\\FreeXT-Mobile\\platforms\\android\\app\\src\\main\\res\\mipmap-mdpi\\icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Jak\\Desktop\\githubStuff\\FreeXT-Mobile\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\xml_config.xml.flat",
+        "source": "C:\\Users\\Jak\\Desktop\\githubStuff\\FreeXT-Mobile\\platforms\\android\\app\\src\\main\\res\\xml\\config.xml"
+    }
+]
