@@ -283,7 +283,33 @@ function saveNote(){
 			
 		}
 		
-		localStorage.setItem("note-" + noteTitle, noteContents);
+		duplicateNote = false;
+		
+		if(localStorage.getItem("note-" + noteTitle) != null){
+			
+			duplicateNote = true;
+			
+			newNum = 1;
+			
+			while(localStorage.getItem("note-" + noteTitle + "(" + newNum + ")") != null){
+				
+				newNum++;
+				
+			}
+			
+		}
+		
+		if(duplicateNote){
+			
+			localStorage.setItem("note-" + noteTitle + "(" + newNum + ")", noteContents);
+			
+		}
+		
+		else{
+			
+			localStorage.setItem("note-" + noteTitle, noteContents);
+			
+		}
 		
 		document.getElementById("saveAlert").innerText = "Note Saved!";
 		
