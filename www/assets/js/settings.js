@@ -13,18 +13,6 @@ async function loadSettings(){
 			
 		}
 		
-		/*if(localStorage.getItem("voiceRecognitionEnabled") == "true"){
-			
-			document.getElementById("voiceRecognitionCheckbox").checked = true;
-			
-		}
-		
-		else{
-			
-			document.getElementById("voiceRecognitionCheckbox").checked = false;
-			
-		}*/
-		
 		if(localStorage.getItem("txtExportEnabled") == "true"){
 			
 			document.getElementById("txtExportSwitch").checked = true;
@@ -100,14 +88,6 @@ function setFont(ele){
 		document.getElementById("fontSelect").style.fontFamily = "roboto";
 		
 	}
-	
-}
-
-function setVoiceRecognition(ele){
-	
-	if(ele.checked) localStorage.setItem("voiceRecognitionEnabled", true);
-	
-	else localStorage.setItem("voiceRecognitionEnabled", false);
 	
 }
 
