@@ -12,4 +12,4 @@ The releases for Windows and Linux can be found on the [FreeXT website](https://
 
 ### Android
 
-FreeXT Mobile will be on the google play store.
+FreeXT Mobile is on the google play store.
