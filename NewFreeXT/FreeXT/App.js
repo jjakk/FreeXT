@@ -2,6 +2,12 @@ import React from 'react';
 import { StyleSheet, Text, View, Button } from 'react-native';
 import Constants from 'expo-constants';
 import { FloatingAction } from "react-native-floating-action";
+import { Header } from "react-native-elements";
+import { SideMenu } from "react-native-side-menu";
+import {createAppContainer} from 'react-navigation';
+import {createStackNavigator} from 'react-navigation-stack';
+
+//For add note button
 
 const actions = [
   {
@@ -18,14 +24,19 @@ const actions = [
   },
 ];
 
-
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text style={styles.mainHeader}>FreeXT</Text>
+class HomeScreen extends React.Component {
+  render(){
+    return (
+      <View style={styles.container}>
+      <Header
+      leftComponent={{ icon: 'menu', color: '#fff' }}
+      centerComponent={{ text: 'FreeXT', style: { color: '#fff', fontSize: 25 } }}
+      rightComponent={{ icon: 'home', color: '#fff' }}
+      />
       <FloatingAction actions={actions}/>
-    </View>
-  );
+      </View>
+    );
+  }
 }
 
 const styles = StyleSheet.create({
@@ -33,10 +44,13 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fafafa',
     alignItems: 'center',
-    marginTop: Constants.statusBarHeight,
-  },
-  mainHeader: {
-    marginTop: 15,
-    fontSize: 30,
   }
 });
+
+const MainNavigator = createStackNavigator({
+  Home: {screen: HomeScreen},
+});
+
+const App = createAppContainer(MainNavigator);
+
+export default App;
