@@ -1,11 +1,12 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button } from 'react-native';
+import Touchable from 'react-native-platform-touchable';
 import Constants from 'expo-constants';
 import { FloatingAction } from "react-native-floating-action";
 import { Header } from "react-native-elements";
 import { SideMenu } from "react-native-side-menu";
-import {createAppContainer} from 'react-navigation';
 import {createStackNavigator} from 'react-navigation-stack';
+import { createDrawerNavigator } from 'react-navigation-drawer';
 
 //For add note button
 
@@ -24,17 +25,29 @@ const actions = [
   },
 ];
 
-class HomeScreen extends React.Component {
+export default class HomeScreen extends React.Component {
   render(){
     return (
       <View style={styles.container}>
-      <Header
-      leftComponent={{ icon: 'menu', color: '#fff' }}
-      centerComponent={{ text: 'FreeXT', style: { color: '#fff', fontSize: 25 } }}
-      rightComponent={{ icon: 'home', color: '#fff' }}
-      />
-      <FloatingAction actions={actions}/>
+        <Header
+        leftComponent={{ icon: 'menu', color: '#fff', underlayColor: 'rgba(52, 52, 52, 0)', size:30, onPress: ()=>{alert("This should open the drawer");} }}
+        centerComponent={{ text: 'FreeXT', style: { color: '#fff', fontSize: 25 } }}
+        />
+        <NotePreview title="Groceries"/>
+        <NotePreview title="Stuff"/>
+        <NotePreview title="Other Stuff"/>
+        <FloatingAction actions={actions}/>
       </View>
+    );
+  }
+}
+
+class NotePreview extends React.Component{
+  render(){
+    return(
+      <Touchable style={styles.note} background={Touchable.Ripple('grey')}>
+        <Text style={styles.noteTitle}>{this.props.title}</Text>
+      </Touchable>
     );
   }
 }
@@ -44,13 +57,27 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fafafa',
     alignItems: 'center',
-  }
+    margin: 0,
+    padding: 0,
+  },
+  note: {
+    backgroundColor: '#fdfdfd',
+    paddingVertical: 20,
+    paddingHorizontal: 10,
+    borderBottomWidth: StyleSheet.hairlineWidth,
+    borderBottomColor: '#EDEDED',
+    alignSelf: 'stretch',
+  },
+  noteTitle: {
+    fontSize: 15,
+  },
 });
 
+/*
 const MainNavigator = createStackNavigator({
   Home: {screen: HomeScreen},
 });
 
 const App = createAppContainer(MainNavigator);
 
-export default App;
+export default App;*/
