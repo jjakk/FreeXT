@@ -4,6 +4,9 @@ import Touchable from 'react-native-platform-touchable';
 import Constants from 'expo-constants';
 import { FloatingAction } from "react-native-floating-action";
 import { Header } from "react-native-elements";
+import { createSwitchNavigator, createAppContainer } from 'react-navigation';
+import { createStackNavigator } from "react-navigation-stack";
+import NoteScreen from "./Note.js";
 
 //For add note button
 
@@ -22,8 +25,9 @@ const actions = [
   },
 ];
 
-export default class HomeScreen extends React.Component {
+class HomeScreen extends React.Component {
   render(){
+    const {navigate} = this.props.navigation;
     return (
       <View style={styles.container}>
         <Header
@@ -34,6 +38,7 @@ export default class HomeScreen extends React.Component {
         <NotePreview title="Stuff"/>
         <NotePreview title="Other Stuff"/>
         <FloatingAction actions={actions}/>
+        <Button title="Hello World" onPress={()=>{navigate("Note");}}/>
       </View>
     );
   }
@@ -69,3 +74,12 @@ const styles = StyleSheet.create({
     fontSize: 15,
   },
 });
+
+const MainNavigator = createStackNavigator({
+  Home: {screen: HomeScreen},
+  Note: {screen: NoteScreen},
+});
+
+const App = createAppContainer(MainNavigator);
+
+export default App;
