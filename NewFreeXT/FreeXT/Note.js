@@ -6,8 +6,7 @@ export default class NoteScreen extends React.Component{
     const {navigate} = this.props.navigation;
     return(
       <View>
-        <Text>Hello World</Text>
-        <Button title="Back" onPress={()=>{navigate("Home");}}/>
+        <Text>This is the notes page</Text>
       </View>
     );
   }
