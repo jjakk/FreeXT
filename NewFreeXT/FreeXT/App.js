@@ -34,9 +34,9 @@ class HomeScreen extends React.Component {
         leftComponent={{ icon: 'menu', color: '#fff', underlayColor: 'rgba(52, 52, 52, 0)', size:30, onPress: ()=>{alert("This should open the drawer");} }}
         centerComponent={{ text: 'FreeXT', style: { color: '#fff', fontSize: 25 } }}
         />
-        <NotePreview title="Groceries" navigation={navigate}/>
-        <NotePreview title="Stuff" navigation={navigate}/>
-        <NotePreview title="Other Stuff" navigation={navigate}/>
+        <NotePreview title="Groceries" navigate={navigate}/>
+        <NotePreview title="Stuff" navigate={navigate}/>
+        <NotePreview title="Other Stuff" navigate={navigate}/>
         <FloatingAction actions={actions}/>
       </View>
     );
@@ -46,7 +46,7 @@ class HomeScreen extends React.Component {
 class NotePreview extends React.Component{
   render(){
     return(
-      <Touchable style={styles.note} background={Touchable.Ripple('grey')} onPress={()=>{this.props.navigation("Note")}}>
+      <Touchable style={styles.note} background={Touchable.Ripple('grey')} onPress={()=>{this.props.navigate("Note", {title: this.props.title})}}>
         <Text style={styles.noteTitle}>{this.props.title}</Text>
       </Touchable>
     );
@@ -85,10 +85,9 @@ const MainNavigator = createStackNavigator({
     screen: NoteScreen,
     navigationOptions: {
       headerStyle: {
-      backgroundColor: '#2089dc',
-    },
+        backgroundColor: '#2089dc',
+      },
     headerTintColor: '#fff',
-    headerTitle: "Note",
     },
   },
 });
