@@ -4,9 +4,6 @@ import Touchable from 'react-native-platform-touchable';
 import Constants from 'expo-constants';
 import { FloatingAction } from "react-native-floating-action";
 import { Header } from "react-native-elements";
-import { SideMenu } from "react-native-side-menu";
-import {createStackNavigator} from 'react-navigation-stack';
-import { createDrawerNavigator } from 'react-navigation-drawer';
 
 //For add note button
 
@@ -72,12 +69,3 @@ const styles = StyleSheet.create({
     fontSize: 15,
   },
 });
-
-/*
-const MainNavigator = createStackNavigator({
-  Home: {screen: HomeScreen},
-});
-
-const App = createAppContainer(MainNavigator);
-
-export default App;*/
