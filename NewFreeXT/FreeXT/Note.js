@@ -1,8 +1,9 @@
 import React from "react";
-import { View, Text, Button, TextInput, StyleSheet, Dimensions, ScrollView } from "react-native";
+import { View, Text, Button, TextInput, StyleSheet, Dimensions, ScrollView, KeyboardAvoidingView } from "react-native";
 import { createSwitchNavigator, createAppContainer } from 'react-navigation';
 import { createStackNavigator, Header } from "react-navigation-stack";
 import Constants from 'expo-constants';
+import InputScrollView from 'react-native-input-scroll-view';
 
 export default class NoteScreen extends React.Component{
   static navigationOptions = ({ navigation }) => {
@@ -10,13 +11,24 @@ export default class NoteScreen extends React.Component{
       title: navigation.getParam("title"),
     };
   };
+  state = {
+    text: "",
+  };
   render(){
     const { navigation } = this.props;
     if(navigation.getParam("type") == "regular"){
+      const { text } = this.state;
       return(
-        <View>
-          <ScrollView><TextInput style={styles.textbox} multiline={true} placeholder="Type Here" autofocus={true}/></ScrollView>
-        </View>
+        <KeyboardAvoidingView style={styles.container} behavior="padding" keyboardVerticalOffset={Header.HEIGHT+Constants.statusBarHeight}>
+          <TextInput
+          style={styles.textbox}
+          placeholder="Type Here"
+          autofocus={true}
+          value={text}
+          onChangeText={text => {this.setState({ text })}}
+          multiline
+          />
+        </KeyboardAvoidingView>
       );
     }
     else{
@@ -30,11 +42,14 @@ export default class NoteScreen extends React.Component{
 }
 
 const styles = StyleSheet.create({
-  textbox: {
-    width: Dimensions.get('window').width,
-    height: Dimensions.get('window').height-Header.HEIGHT,
+  container: {
     backgroundColor: "#e8e8e8",
+    flex: 1,
+    height: Dimensions.get('window').height-Header.HEIGHT,
+  },
+  textbox: {
     textAlignVertical: "top",
+    backgroundColor: "white",
     padding: 10,
     fontSize: 18,
   },

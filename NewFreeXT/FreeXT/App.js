@@ -47,7 +47,10 @@ class HomeScreen extends React.Component {
 class NotePreview extends React.Component{
   render(){
     return(
-      <Touchable style={styles.note} background={Touchable.Ripple('grey')} onPress={()=>{this.props.navigate("Note", {title: this.props.title, type: this.props.type})}}>
+      <Touchable
+      style={styles.note}
+      background={Touchable.Ripple('grey')}
+      onPress={()=>{this.props.navigate("Note", {title: this.props.title, type: this.props.type})}}>
         <View style={styles.noteContainer}>
           <Text style={styles.noteTitle}>{this.props.title}</Text>
           <Icon style={styles.noteIcon} name={this.props.type=="regular"?"note":"list"} />
