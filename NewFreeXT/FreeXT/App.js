@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import { StyleSheet, Text, View, Button, Platform } from 'react-native';
 import Touchable from 'react-native-platform-touchable';
 import Constants from 'expo-constants';
 import { FloatingAction } from "react-native-floating-action";
@@ -13,16 +13,10 @@ import {AsyncStorage} from 'react-native';
 
 const actions = [
   {
-    text: "Regular Note",
-    name: "bt_regularNote",
-    icon: require("./assets/icons/newNote.png"),
-    position: 1
-  },
-  {
-    text: "List",
-    name: "bt_list",
-    icon: require("./assets/icons/list.png"),
-    position: 2
+    text: "New Note",
+    name: "bt_newNote",
+    //icon: Platform.OS === "ios" ? "ios-add" : "md-add",
+    position: 1,
   },
 ];
 
@@ -35,9 +29,9 @@ class HomeScreen extends React.Component {
         leftComponent={{ icon: 'menu', color: '#fff', underlayColor: 'rgba(52, 52, 52, 0)', size:30, onPress: ()=>{alert("This should open the drawer");} }}
         centerComponent={{ text: 'FreeXT', style: { color: '#fff', fontSize: 25 } }}
         />
-        <NotePreview type="list" title="Groceries" navigate={navigate}/>
-        <NotePreview type="regular" title="Stuff" navigate={navigate}/>
-        <NotePreview type="regular" title="Other Stuff" navigate={navigate}/>
+        <NotePreview title="Groceries" navigate={navigate}/>
+        <NotePreview title="Stuff" navigate={navigate}/>
+        <NotePreview title="Other Stuff" navigate={navigate}/>
         <FloatingAction actions={actions}/>
       </View>
     );
@@ -50,10 +44,9 @@ class NotePreview extends React.Component{
       <Touchable
       style={styles.note}
       background={Touchable.Ripple('grey')}
-      onPress={()=>{this.props.navigate("Note", {title: this.props.title, type: this.props.type})}}>
+      onPress={()=>{this.props.navigate("Note", {title: this.props.title})}}>
         <View style={styles.noteContainer}>
           <Text style={styles.noteTitle}>{this.props.title}</Text>
-          <Icon style={styles.noteIcon} name={this.props.type=="regular"?"note":"list"} />
         </View>
       </Touchable>
     );
@@ -83,9 +76,6 @@ const styles = StyleSheet.create({
   noteTitle: {
     fontSize: 15,
   },
-  noteIcon: {
-
-  },
 });
 
 const MainNavigator = createStackNavigator({
@@ -106,6 +96,6 @@ const MainNavigator = createStackNavigator({
   },
 });
 
-const App = createAppContainer(MainNavigator);
+const App = createAppContainer(MainNavigator, {defaultNavigationOptions: null});
 
 export default App;
