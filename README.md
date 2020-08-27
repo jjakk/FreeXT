@@ -10,7 +10,7 @@ FreeXT is available on Windows, Android, and has a web version for any platforms
 
 ### Windows & Linux
 
-The releases for Windows and Linux can be found on the [FreeXT website](https://freext.protosapps.com/), and here under [releases](https://github.com/Protos-Apps/FreeXT-Mobile/releases).
+The releases for Windows and Linux can be found on the [FreeXT website](https://freext.protosapps.com/), and here under [releases](https://github.com/protos-apps/FreeXT/releases).
 
 ### Android
 
