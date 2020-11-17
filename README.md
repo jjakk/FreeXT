@@ -1,6 +1,6 @@
 # FreeXT
 
-FreeXT is a free open-source note taking application developed by Jak Inventions.
+FreeXT is a free open-source note taking application developed by Protos Apps.
 
 <img src="https://freext.protosapps.com/images/FreeXT-SS2.png" data-canonical-src="https://freext.jakinventions.com/images/FreeXT-SS2.png" width="520" height="320" />
 
