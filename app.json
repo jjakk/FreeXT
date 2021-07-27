@@ -24,7 +24,8 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       },
-      "package": "com.protosapps.freext"
+      "package": "com.protosapps.freext",
+      "permissions": []
     },
     "web": {
       "favicon": "./assets/icon.png"
