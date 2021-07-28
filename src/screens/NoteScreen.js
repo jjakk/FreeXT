@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from 'react';
-import { View, TextInput, StyleSheet, TouchableOpacity } from 'react-native';
+import { View, TextInput, StyleSheet, TouchableOpacity, KeyboardAvoidingView, TouchableWithoutFeedback, Keyboard } from 'react-native';
 import { Context } from '../context/NotesContext';
 import { MaterialIcons } from '@expo/vector-icons';
 import { Ionicons } from '@expo/vector-icons';
@@ -22,38 +22,42 @@ const NoteScreen = ({ navigation }) => {
     }
 
     return (
-        <SafeAreaView style={styles.container} forceInset={{top: 'always'}}>
-            <View style={styles.header}>
-                <TouchableOpacity
-                    onPress={() => {
-                        navigation.navigate('Home')
-                    }}
-                >
-                    <Ionicons name="arrow-back" style={styles.back} />
-                </TouchableOpacity>
-                <TextInput
-                    style={styles.title}
-                    value={title}
-                    placeholder='Title'
-                    onChangeText={setTitle}
-                />
-                <TouchableOpacity
-                    onPress={() => {
-                        deleteNote({ id: noteId }, () => {
-                            navigation.navigate('Home');
-                        });
-                    }}
-                >
-                    <MaterialIcons name="delete-outline" size={30} style={styles.trash} />
-                </TouchableOpacity>
-            </View>
-            <TextInput
-                multiline
-                style={styles.content}
-                value={content}
-                placeholder='Content'
-                onChangeText={setContent}
-            />
+        <SafeAreaView style={styles.container}  forceInset={{top: 'always'}}>
+            <TouchableWithoutFeedback style={styles.container} onPress={Keyboard.dismiss}>
+                <KeyboardAvoidingView style={styles.container} behavior={Platform.OS === "ios" ? "padding" : "height"} keyboardVerticalOffset={15}>
+                    <View style={styles.header}>
+                        <TouchableOpacity
+                            onPress={() => {
+                                navigation.navigate('Home')
+                            }}
+                        >
+                            <Ionicons name="arrow-back" style={styles.back} />
+                        </TouchableOpacity>
+                        <TextInput
+                            style={styles.title}
+                            value={title}
+                            placeholder='Title'
+                            onChangeText={setTitle}
+                        />
+                        <TouchableOpacity
+                            onPress={() => {
+                                deleteNote({ id: noteId }, () => {
+                                    navigation.navigate('Home');
+                                });
+                            }}
+                        >
+                            <MaterialIcons name="delete-outline" size={30} style={styles.trash} />
+                        </TouchableOpacity>
+                    </View>
+                    <TextInput
+                        multiline
+                        style={styles.content}
+                        value={content}
+                        placeholder='Content'
+                        onChangeText={setContent}
+                    />
+                </KeyboardAvoidingView>
+            </TouchableWithoutFeedback>
         </SafeAreaView>
     );
 };
