@@ -26,7 +26,8 @@
         "backgroundColor": "#FFFFFF"
       },
       "package": "com.protosapps.freext",
-      "permissions": []
+      "permissions": [],
+      "versionCode": 2
     },
     "web": {
       "favicon": "./assets/icon.png"
